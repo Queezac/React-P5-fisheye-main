@@ -1,0 +1,20 @@
+.header {
+    font-family: 'DM Sans', sans-serif;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 8px 100px 40px 100px;
+}
+
+.image {
+    height: 50px;
+    width: auto;
+}
+
+.textHeader {
+    font-size: 36px;
+    color: #901C1C;
+}

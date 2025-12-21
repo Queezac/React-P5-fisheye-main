@@ -1,0 +1,51 @@
+/* [project]/src/components/Gallery/Gallery.module.css [app-client] (css) */
+.Gallery-module__Sa_FLW__gallery {
+  grid-template-columns: repeat(3, 350px);
+  justify-content: space-between;
+  margin-top: 30px;
+  padding: 0 100px;
+  display: grid;
+}
+
+.Gallery-module__Sa_FLW__mediaCard {
+  flex-direction: column;
+  align-items: flex-start;
+  width: 350px;
+  display: flex;
+}
+
+.Gallery-module__Sa_FLW__mediaCard img, .Gallery-module__Sa_FLW__mediaCard video {
+  object-fit: cover;
+  border-radius: 5px;
+  width: 350px;
+  height: 300px;
+}
+
+.Gallery-module__Sa_FLW__mediaInfo {
+  color: #901c1c;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: 2em;
+  font-size: 20px;
+  display: flex;
+}
+
+.Gallery-module__Sa_FLW__sortContainer {
+  flex-direction: row;
+  align-items: center;
+  gap: 30px;
+  padding: 20px 0 20px 100px;
+  display: flex;
+}
+
+.Gallery-module__Sa_FLW__sortContainer select {
+  color: #fff;
+  cursor: pointer;
+  background-color: #901c1c;
+  border: none;
+  border-radius: 5px;
+  padding: 15px;
+}
+
+/*# sourceMappingURL=src_components_Gallery_Gallery_module_css_bad6b30c._.single.css.map*/

@@ -1,0 +1,61 @@
+.contactForm {
+  border-radius: 5px;
+  background-color: #901C1C;
+  color: #fff;
+  border: none;
+  padding: 20px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.modalOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal {
+  background: #DB8876;
+  padding: 2rem;
+  border-radius: 10px;
+  width: 400px;
+  max-width: 90%;
+  position: relative;
+}
+
+.closeButton {
+  position: absolute;
+  top: 15px;
+  right: 20px;
+  border: none;
+  background: none;
+  font-size: 1.2rem;
+  cursor: pointer;
+  color: white;
+  font-size: 40px;
+}
+
+.form input,
+.form textarea {
+  width: 100%;
+  margin-bottom: 1rem;
+  padding: 0.5rem;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.sendButton {
+  padding: 1em 2em;
+  border: none;
+  background: #901C1C;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}

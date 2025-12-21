@@ -1,0 +1,188 @@
+/* [project]/src/components/ContactForm/ContactForm.module.css [app-client] (css) */
+.ContactForm-module__fw3Taq__modalOverlay {
+  z-index: 1000;
+  background: #0009;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+.ContactForm-module__fw3Taq__modal {
+  background: #fff;
+  border-radius: 10px;
+  width: 400px;
+  max-width: 90%;
+  padding: 2rem;
+  position: relative;
+}
+
+.ContactForm-module__fw3Taq__closeButton {
+  cursor: pointer;
+  background: none;
+  border: none;
+  font-size: 1.2rem;
+  position: absolute;
+  top: 10px;
+  right: 15px;
+}
+
+.ContactForm-module__fw3Taq__form input, .ContactForm-module__fw3Taq__form textarea {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 100%;
+  margin-bottom: 1rem;
+  padding: .5rem;
+}
+
+.ContactForm-module__fw3Taq__form button {
+  color: #fff;
+  cursor: pointer;
+  background: #0070f3;
+  border: none;
+  border-radius: 5px;
+  padding: .5rem 1rem;
+}
+
+/* [project]/src/components/Gallery/Gallery.module.css [app-client] (css) */
+.Gallery-module__Sa_FLW__gallery {
+  grid-template-columns: repeat(3, 350px);
+  justify-content: space-between;
+  margin-top: 30px;
+  padding: 0 100px;
+  display: grid;
+}
+
+.Gallery-module__Sa_FLW__mediaCard {
+  flex-direction: column;
+  align-items: flex-start;
+  width: 350px;
+  display: flex;
+}
+
+.Gallery-module__Sa_FLW__mediaCard img, .Gallery-module__Sa_FLW__mediaCard video {
+  object-fit: cover;
+  border-radius: 5px;
+  width: 350px;
+  height: 300px;
+}
+
+.Gallery-module__Sa_FLW__mediaInfo {
+  color: #901c1c;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: 2em;
+  font-size: 20px;
+  display: flex;
+}
+
+.Gallery-module__Sa_FLW__sortContainer {
+  flex-direction: row;
+  align-items: center;
+  gap: 30px;
+  padding: 20px 0 20px 100px;
+  display: flex;
+}
+
+.Gallery-module__Sa_FLW__sortContainer select {
+  color: #fff;
+  cursor: pointer;
+  background-color: #901c1c;
+  border: none;
+  border-radius: 5px;
+  padding: 15px;
+}
+
+/* [project]/src/app/page.module.css [app-client] (css) */
+.page-module___8aEwW__container {
+  font-family: DM Sans, sans-serif;
+}
+
+.page-module___8aEwW__header {
+  justify-content: flex-start;
+  padding: 40px 100px;
+  display: flex;
+}
+
+.page-module___8aEwW__imageHeader {
+  width: auto;
+  height: 50px;
+}
+
+.page-module___8aEwW__infoContainer {
+  background-color: #fafafa;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin: 20px 100px;
+  padding: 50px;
+  display: flex;
+}
+
+.page-module___8aEwW__details {
+  flex-direction: column;
+  display: flex;
+}
+
+.page-module___8aEwW__details h1 {
+  color: #d3573c;
+  margin: .5em 0;
+  font-size: 60px;
+  font-weight: 400;
+}
+
+.page-module___8aEwW__localisation {
+  color: #901c1c;
+  margin: 0 0 .5em;
+  font-size: 24px;
+}
+
+.page-module___8aEwW__contact button {
+  color: #fff;
+  cursor: pointer;
+  background-color: #901c1c;
+  border: none;
+  border-radius: 5px;
+  padding: 20px;
+  font-size: 16px;
+}
+
+.page-module___8aEwW__portrait {
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+  position: relative;
+  overflow: hidden;
+}
+
+.page-module___8aEwW__photoWrapper {
+  border-radius: 50%;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+.page-module___8aEwW__photographerCardBottom {
+  color: #000;
+  z-index: 1000;
+  background-color: #db8876;
+  border-radius: 5px 5px 0 0;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 300px;
+  padding: 0 50px;
+  font-size: 24px;
+  display: flex;
+  position: fixed;
+  bottom: 0;
+  right: 40px;
+}
+
+/*# sourceMappingURL=src_cacca570._.css.map*/

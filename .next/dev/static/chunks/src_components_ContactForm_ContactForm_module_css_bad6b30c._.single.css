@@ -1,0 +1,62 @@
+/* [project]/src/components/ContactForm/ContactForm.module.css [app-client] (css) */
+.ContactForm-module__fw3Taq__contactForm {
+  color: #fff;
+  cursor: pointer;
+  background-color: #901c1c;
+  border: none;
+  border-radius: 5px;
+  padding: 20px;
+  font-size: 16px;
+}
+
+.ContactForm-module__fw3Taq__modalOverlay {
+  z-index: 1000;
+  background: #0009;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+.ContactForm-module__fw3Taq__modal {
+  background: #db8876;
+  border-radius: 10px;
+  width: 400px;
+  max-width: 90%;
+  padding: 2rem;
+  position: relative;
+}
+
+.ContactForm-module__fw3Taq__closeButton {
+  cursor: pointer;
+  color: #fff;
+  background: none;
+  border: none;
+  font-size: 40px;
+  position: absolute;
+  top: 15px;
+  right: 20px;
+}
+
+.ContactForm-module__fw3Taq__form input, .ContactForm-module__fw3Taq__form textarea {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 100%;
+  margin-bottom: 1rem;
+  padding: .5rem;
+}
+
+.ContactForm-module__fw3Taq__sendButton {
+  color: #fff;
+  cursor: pointer;
+  background: #901c1c;
+  border: none;
+  border-radius: 5px;
+  padding: 1em 2em;
+}
+
+/*# sourceMappingURL=src_components_ContactForm_ContactForm_module_css_bad6b30c._.single.css.map*/

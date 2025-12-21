@@ -1,0 +1,6 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 1, "column": 0}, "map": {"version":3,"sources":["turbopack:///[project]/src/components/Gallery/Gallery.module.css"],"sourcesContent":[".gallery {\r\n  display: grid;\r\n  grid-template-columns: repeat(3, 350px); \r\n  justify-content: space-between; \r\n  margin-top: 30px;\r\n  padding: 0 100px;\r\n}\r\n\r\n.mediaCard {\r\n  display: flex;\r\n  flex-direction: column;\r\n  align-items: flex-start; \r\n  width: 350px;\r\n}\r\n\r\n.mediaCard img,\r\n.mediaCard video {\r\n  width: 350px;\r\n  height: 300px;\r\n  object-fit: cover;\r\n  border-radius: 5px;\r\n}\r\n\r\n.mediaInfo {\r\n  display: flex;\r\n  flex-direction: row;\r\n  justify-content: space-between;\r\n  width: 100%;\r\n  font-size: 20px;\r\n  color: #901C1C;\r\n  margin-bottom: 2em;\r\n}\r\n\r\n.sortContainer {\r\n  display: flex;\r\n  flex-direction: row;\r\n  align-items: center;\r\n  gap: 30px;\r\n  padding: 20px 0px 20px 100px;\r\n}\r\n\r\n.sortContainer select {\r\n  border-radius: 5px;\r\n  background-color: #901C1C;\r\n  color: #fff;\r\n  border: none;\r\n  padding: 15px;\r\n  cursor: pointer;\r\n}\r\n"],"names":[],"mappings":"AAAA;;;;;;;;AAQA;;;;;;;AAOA;;;;;;;AAQA;;;;;;;;;;AAUA;;;;;;;;AAQA"}}]
+}

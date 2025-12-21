@@ -1,0 +1,21 @@
+/* [project]/src/components/Header/Header.module.css [app-client] (css) */
+.Header-module__ldgnoG__header {
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 100px 40px;
+  font-family: DM Sans, sans-serif;
+  display: flex;
+}
+
+.Header-module__ldgnoG__image {
+  width: auto;
+  height: 50px;
+}
+
+.Header-module__ldgnoG__textHeader {
+  color: #901c1c;
+  font-size: 36px;
+}
+
+/*# sourceMappingURL=src_components_Header_Header_module_css_bad6b30c._.single.css.map*/

@@ -1,0 +1,49 @@
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 350px); 
+  justify-content: space-between; 
+  margin-top: 30px;
+  padding: 0 100px;
+}
+
+.mediaCard {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; 
+  width: 350px;
+}
+
+.mediaCard img,
+.mediaCard video {
+  width: 350px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+.mediaInfo {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  font-size: 20px;
+  color: #901C1C;
+  margin-bottom: 2em;
+}
+
+.sortContainer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 30px;
+  padding: 20px 0px 20px 100px;
+}
+
+.sortContainer select {
+  border-radius: 5px;
+  background-color: #901C1C;
+  color: #fff;
+  border: none;
+  padding: 15px;
+  cursor: pointer;
+}

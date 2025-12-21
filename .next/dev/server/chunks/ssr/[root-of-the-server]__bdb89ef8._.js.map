@@ -1,0 +1,6 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 10, "column": 0}, "map": {"version":3,"sources":["file:///C:/Users/Salom%C3%A9/Desktop/Projets%20Openclassrooms/projet4/React-P5-fisheye-main/src/app/page.js"],"sourcesContent":["import PhotographersList from \"./components/PhotographersList\";\r\n\r\nexport default function HomePage() {\r\n  return (\r\n    <main>\r\n      <PhotographersList />\r\n    </main>\r\n  );\r\n}\r\n"],"names":[],"mappings":";;;;;;;;;;;;AAEe,SAAS;IACtB,qBACE,8OAAC;kBACC,cAAA,8OAAC;;;;;;;;;;AAGP"}}]
+}
