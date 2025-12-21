@@ -11,6 +11,7 @@
   flex-direction: column;
   align-items: flex-start; 
   width: 350px;
+  cursor: pointer;
 }
 
 .mediaCard img,
@@ -47,3 +48,79 @@
   padding: 15px;
   cursor: pointer;
 }
+
+.modalOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+
+.modal {
+  position: relative;
+  background: white;
+  padding: 1rem;
+  border-radius: 10px;
+  max-width: 90%;
+  max-height: 90%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #901C1C;
+}
+
+.modal img {
+  width: 80vw;
+  max-height: 80vh;
+  object-fit: contain;
+  border-radius: 5px;
+  pointer-events: none;
+}
+
+.modal p {
+  margin-top: 1rem;
+  font-size: 1.2rem;
+  z-index: 11;
+}
+
+
+.closeButton {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 1.5rem;
+  color: #901C1C;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.prevButton, .nextButton {
+  position: absolute;
+  top: 50%;
+  font-size: 2rem;
+  color: #901C1C;
+  background: none;
+  border: none;
+  cursor: pointer;
+  transform: translateY(-50%);
+}
+
+.closeButton, .prevButton, .nextButton {
+  position: absolute;
+  z-index: 10;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 2rem;
+}
+
+.prevButton { left: 10px; }
+.nextButton { right: 10px; }
