@@ -63,11 +63,11 @@
 }
 
 .Gallery-module__Sa_FLW__modal {
+  align-items: left;
   color: #901c1c;
   background: #fff;
   border-radius: 10px;
   flex-direction: column;
-  align-items: center;
   max-width: 90%;
   max-height: 90%;
   padding: 1rem;
@@ -79,8 +79,13 @@
   object-fit: contain;
   pointer-events: none;
   border-radius: 5px;
-  width: 80vw;
+  width: 60vw;
   max-height: 80vh;
+}
+
+.Gallery-module__Sa_FLW__modalImg {
+  pointer-events: none;
+  border-radius: 5px;
 }
 
 .Gallery-module__Sa_FLW__modal p {

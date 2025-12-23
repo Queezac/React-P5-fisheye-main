@@ -69,17 +69,17 @@ export default function Gallery({ medias }) {
           <div className={styles.modal}>
             <button className={styles.closeButton} onClick={closeModal} type="button">✖</button>
 
-            <button className={styles.prevButton} onClick={prevImage} type="button">◀</button>
+            <button className={styles.prevButton} onClick={prevImage} type="button">❮</button>
 
             <Image
               src={`/assets/${imagesOnly[currentIndex].image}`}
               alt={imagesOnly[currentIndex].title}
               width={800}
               height={600}
-              style={{ objectFit: 'contain', pointerEvents: 'none' }}
+              className={styles.modalImg}
             />
 
-            <button className={styles.nextButton} onClick={nextImage} type="button">▶</button>
+            <button className={styles.nextButton} onClick={nextImage} type="button">❯</button>
 
             <p>{imagesOnly[currentIndex].title}</p>
           </div>

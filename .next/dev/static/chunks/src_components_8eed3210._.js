@@ -7,6 +7,7 @@ __turbopack_context__.v({
   "mediaCard": "Gallery-module__Sa_FLW__mediaCard",
   "mediaInfo": "Gallery-module__Sa_FLW__mediaInfo",
   "modal": "Gallery-module__Sa_FLW__modal",
+  "modalImg": "Gallery-module__Sa_FLW__modalImg",
   "modalOverlay": "Gallery-module__Sa_FLW__modalOverlay",
   "nextButton": "Gallery-module__Sa_FLW__nextButton",
   "prevButton": "Gallery-module__Sa_FLW__prevButton",
@@ -186,7 +187,7 @@ function Gallery({ medias }) {
                             className: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$Gallery$2f$Gallery$2e$module$2e$css__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].prevButton,
                             onClick: prevImage,
                             type: "button",
-                            children: "◀"
+                            children: "❮"
                         }, void 0, false, {
                             fileName: "[project]/src/components/Gallery/Gallery.js",
                             lineNumber: 72,
@@ -197,10 +198,7 @@ function Gallery({ medias }) {
                             alt: imagesOnly[currentIndex].title,
                             width: 800,
                             height: 600,
-                            style: {
-                                objectFit: 'contain',
-                                pointerEvents: 'none'
-                            }
+                            className: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$Gallery$2f$Gallery$2e$module$2e$css__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].modalImg
                         }, void 0, false, {
                             fileName: "[project]/src/components/Gallery/Gallery.js",
                             lineNumber: 74,
@@ -210,7 +208,7 @@ function Gallery({ medias }) {
                             className: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$Gallery$2f$Gallery$2e$module$2e$css__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].nextButton,
                             onClick: nextImage,
                             type: "button",
-                            children: "▶"
+                            children: "❯"
                         }, void 0, false, {
                             fileName: "[project]/src/components/Gallery/Gallery.js",
                             lineNumber: 82,
