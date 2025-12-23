@@ -47,3 +47,4 @@
 [01:23:54.322] Browser WARN    Image with src "/assets/RhodeDubois.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
 [01:23:54.322] Browser WARN    Image with src "/assets/EllieRoseWilkens.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
 [01:23:54.322] Browser WARN    Image with src "/assets/NabeelBradford.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[01:24:29.187] Server  LOG      ✓ Compiled in 24ms
