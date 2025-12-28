@@ -1,8 +1,8 @@
 /* [project]/src/components/Header/Header.module.css [app-client] (css) */
 .Header-module__ldgnoG__header {
-  flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  min-height: 130px;
   padding: 8px 100px 40px;
   font-family: DM Sans, sans-serif;
   display: flex;
@@ -15,6 +15,7 @@
 
 .Header-module__ldgnoG__textHeader {
   color: #901c1c;
+  height: 50px;
   font-size: 36px;
 }
 

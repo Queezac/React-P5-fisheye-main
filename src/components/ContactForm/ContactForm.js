@@ -14,13 +14,14 @@ export default function ContactForm({ photographerName }) {
 
   const handleChange = (e) => {
     const { name, value } = e.target;
-    setFormData(prev => ({ ...prev, [name]: value }));
+    setFormData({ ...formData, [name]: value });
   };
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log("Formulaire envoyé (fictif) :", formData);
-    alert(`Message envoyé à ${photographerName} !`);
+
+    console.log(formData);
+
     setIsOpen(false);
   };
 
@@ -31,15 +32,19 @@ export default function ContactForm({ photographerName }) {
       {isOpen && (
         <div className={styles.modalOverlay}>
           <div className={styles.modal}>
+
             <button className={styles.closeButton} onClick={() => setIsOpen(false)}>✖</button>
-            <h2>Contactez-moi</h2>
-            <h2>{photographerName}</h2>
+
+            <div className={styles.titleContainer}>
+              <h2>Contactez-moi</h2>
+              <h2>{photographerName}</h2>
+            </div>
+            
             <form onSubmit={handleSubmit} className={styles.form}>
               <label>Prénom</label>
               <input
                 type="text"
                 name="firstName"
-                value={formData.firstName}
                 onChange={handleChange}
                 required
               />
@@ -48,7 +53,6 @@ export default function ContactForm({ photographerName }) {
               <input
                 type="text"
                 name="lastName"
-                value={formData.lastName}
                 onChange={handleChange}
                 required
               />
@@ -57,7 +61,6 @@ export default function ContactForm({ photographerName }) {
               <input
                 type="email"
                 name="email"
-                value={formData.email}
                 onChange={handleChange}
                 required
               />
@@ -65,7 +68,6 @@ export default function ContactForm({ photographerName }) {
               <label>Message</label>
               <textarea
                 name="message"
-                value={formData.message}
                 onChange={handleChange}
                 required
               />

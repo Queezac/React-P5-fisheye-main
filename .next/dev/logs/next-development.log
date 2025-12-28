@@ -1,62 +1,378 @@
-[00:00:01.862] Server  LOG      ✓ Ready in 1289ms
-[00:00:25.642] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:00:25.913] Browser WARN    Image with src "/assets/MarcelNikolic.jpg" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
+[00:00:01.780] Server  LOG      ✓ Ready in 1217ms
+[00:00:10.973] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:00:11.238] Browser WARN    Image with src "/assets/TracyGalindo.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:00:11.238] Browser WARN    Image with src "/assets/MarcelNikolic.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:00:11.238] Browser WARN    Image with src "/assets/MimiKeel.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:00:11.238] Browser WARN    Image with src "/assets/NabeelBradford.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:00:11.238] Browser WARN    Image with src "/assets/RhodeDubois.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:00:11.238] Browser WARN    Image with src "/assets/EllieRoseWilkens.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:00:14.066] Server  ERROR    ⨯ "The requested resource isn't a valid image for" "/assets/Travel_Adventure_Door.jpg" "received" null
+[00:00:14.067] Server  ERROR    ⨯ "The requested resource isn't a valid image for" "/assets/Architecture_Contrast.jpg" "received" null
+[00:02:06.064] Server  ERROR    ⨯ "The requested resource isn't a valid image for" "/assets/Travel_Adventure_Door.jpg" "received" null
+[00:02:06.070] Server  ERROR    ⨯ "The requested resource isn't a valid image for" "/assets/Architecture_Contrast.jpg" "received" null
+[00:06:14.965] Server  LOG      ✓ Compiled in 44ms
+[00:06:27.470] Server  ERROR   C:\Users\Salomé\Desktop\Projets Openclassrooms\projet4\React-P5-fisheye-main\.next\dev\server\chunks\ssr\[root-of-the-server]__7467a0f0._.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:06:27.474] Server  ERROR    ⨯ ReferenceError: p is not defined
+[00:06:27.509] Server  ERROR   C:\Users\Salomé\Desktop\Projets Openclassrooms\projet4\React-P5-fisheye-main\.next\dev\server\chunks\ssr\[root-of-the-server]__7467a0f0._.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:06:27.509] Server  ERROR    ⨯ ReferenceError: p is not defined
+[00:06:27.641] Browser ERROR   uncaughtError: ReferenceError: p is not defined
+[00:07:22.728] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:07:23.277] Browser WARN    Image with src "/assets/TracyGalindo.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:07:23.277] Browser WARN    Image with src "/assets/MarcelNikolic.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:07:23.277] Browser WARN    Image with src "/assets/MimiKeel.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:07:23.277] Browser WARN    Image with src "/assets/NabeelBradford.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:07:23.277] Browser WARN    Image with src "/assets/RhodeDubois.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:07:23.277] Browser WARN    Image with src "/assets/EllieRoseWilkens.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:07:23.608] Browser WARN    Image with src "/assets/TracyGalindo.jpg" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
 Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
-[00:00:25.913] Browser WARN    Image with src "/assets/TracyGalindo.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
-[00:00:25.913] Browser WARN    Image with src "/assets/MarcelNikolic.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
-[00:00:25.913] Browser WARN    Image with src "/assets/MimiKeel.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
-[00:00:25.913] Browser WARN    Image with src "/assets/NabeelBradford.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
-[00:00:25.913] Browser WARN    Image with src "/assets/RhodeDubois.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
-[00:00:25.913] Browser WARN    Image with src "/assets/EllieRoseWilkens.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
-[00:00:28.284] Server  ERROR    ⨯ "The requested resource isn't a valid image for" "/assets/Travel_Adventure_Door.jpg" "received" null
-[00:00:28.285] Server  ERROR    ⨯ "The requested resource isn't a valid image for" "/assets/Architecture_Contrast.jpg" "received" null
-[00:00:53.788] Browser WARN    Image with src "/assets/Portrait_Wednesday.jpg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
-[00:00:55.027] Browser WARN    Image with src "/assets/Event_SeasideWedding.jpg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
-[00:00:55.216] Browser WARN    Image with src "/assets/Travel_Lonesome.jpg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
-[00:00:55.392] Browser WARN    Image with src "/assets/Travel_HillsideColor.jpg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
-[00:00:55.559] Browser WARN    Image with src "/assets/Event_BenevidesWedding.jpg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
-[00:00:55.734] Browser WARN    Image with src "/assets/Portrait_Nora.jpg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
-[00:00:55.884] Browser WARN    Image with src "/assets/Animals_Rainbow.jpg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
-[00:00:56.051] Browser WARN    Image with src "/assets/Portrait_Background.jpg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
-[00:00:56.252] Browser WARN    Image with src "/assets/Event_PintoWedding.jpg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
-[00:04:08.820] Server  LOG      ✓ Compiled in 6ms
-[00:04:16.174] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:04:16.695] Browser WARN    Image with src "/assets/MimiKeel.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
-[00:04:17.310] Browser WARN    Image with src "/assets/Travel_HillsideColor.jpg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
-[00:04:18.063] Browser WARN    Image with src "/assets/Event_BenevidesWedding.jpg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
-[00:04:18.215] Browser WARN    Image with src "/assets/Portrait_Nora.jpg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
-[00:04:18.393] Browser WARN    Image with src "/assets/Animals_Rainbow.jpg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
-[00:04:18.536] Browser WARN    Image with src "/assets/Portrait_Background.jpg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
-[00:04:18.696] Browser WARN    Image with src "/assets/Event_PintoWedding.jpg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
-[00:04:18.842] Browser WARN    Image with src "/assets/Portrait_Wednesday.jpg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
-[00:04:18.983] Browser WARN    Image with src "/assets/Event_SeasideWedding.jpg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
-[00:04:19.136] Browser WARN    Image with src "/assets/Travel_Lonesome.jpg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
-[00:05:01.892] Server  LOG      ✓ Compiled in 3ms
-[00:05:16.517] Server  LOG      ✓ Compiled in 4ms
-[00:05:19.665] Server  LOG      ✓ Compiled in 4ms
-[00:05:32.646] Server  LOG      ✓ Compiled in 3ms
-[00:05:38.206] Server  LOG      ✓ Compiled in 3ms
-[00:05:41.297] Server  LOG      ✓ Compiled in 3ms
-[00:05:51.878] Server  LOG      ✓ Compiled in 4ms
-[00:05:54.329] Server  LOG      ✓ Compiled in 3ms
-[00:05:57.298] Server  LOG      ✓ Compiled in 3ms
-[00:05:59.446] Server  LOG      ✓ Compiled in 3ms
-[00:06:16.479] Server  LOG      ✓ Compiled in 3ms
-[00:06:52.471] Server  LOG      ✓ Compiled in 5ms
-[00:07:06.932] Server  LOG      ✓ Compiled in 4ms
-[00:07:11.631] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:07:11.830] Browser WARN    Image with src "/assets/Travel_HillsideColor.jpg" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
+[00:07:24.891] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:07:25.106] Browser WARN    Image with src "/assets/TracyGalindo.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:07:25.106] Browser WARN    Image with src "/assets/MarcelNikolic.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:07:25.106] Browser WARN    Image with src "/assets/MimiKeel.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:07:25.106] Browser WARN    Image with src "/assets/NabeelBradford.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:07:25.106] Browser WARN    Image with src "/assets/RhodeDubois.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:07:25.106] Browser WARN    Image with src "/assets/EllieRoseWilkens.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:08:55.767] Server  LOG      ✓ Compiled in 4ms
+[00:13:14.313] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:13:14.607] Browser WARN    Image with src "/assets/TracyGalindo.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:13:16.254] Browser WARN    Image with src "/assets/MarcelNikolic.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:13:16.427] Browser WARN    Image with src "/assets/MimiKeel.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:13:16.427] Browser WARN    Image with src "/assets/RhodeDubois.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:13:16.591] Browser WARN    Image with src "/assets/NabeelBradford.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:13:16.591] Browser WARN    Image with src "/assets/EllieRoseWilkens.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:14:24.274] Browser ERROR   ./src/app/photographes/[id]/page.js:16:18
+Parsing ecmascript source code failed
+  14 |   if (!photographer) notFound();
+  15 |
+> 16 |   const medias = await getAllMediasForPhotographer(Number(id));
+     |                  ^^^^^
+  17 |
+  18 |   return (
+  19 |     <div className={styles.container}>
+
+await isn't allowed in non-async function
+[00:15:03.272] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:15:03.564] Browser WARN    Image with src "/assets/TracyGalindo.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:15:07.849] Browser WARN    Image with src "/assets/MarcelNikolic.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:15:07.849] Browser WARN    Image with src "/assets/RhodeDubois.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:15:07.849] Browser WARN    Image with src "/assets/MimiKeel.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:15:07.849] Browser WARN    Image with src "/assets/NabeelBradford.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:15:07.849] Browser WARN    Image with src "/assets/EllieRoseWilkens.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:15:44.267] Server  ERROR    ⨯ "The requested resource isn't a valid image for" "/assets/Travel_Adventure_Door.jpg" "received" null
+[00:15:44.310] Server  ERROR    ⨯ "The requested resource isn't a valid image for" "/assets/Architecture_Contrast.jpg" "received" null
+[00:16:06.390] Server  ERROR    ⨯ "The requested resource isn't a valid image for" "/assets/Travel_Adventure_Door.jpg" "received" null
+[00:16:06.427] Server  ERROR    ⨯ "The requested resource isn't a valid image for" "/assets/Architecture_Contrast.jpg" "received" null
+[00:16:35.101] Server  LOG      ✓ Compiled in 3ms
+[00:16:36.216] Server  LOG      ✓ Compiled in 3ms
+[00:17:29.103] Server  LOG      ✓ Compiled in 4ms
+[00:17:31.408] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:17:31.849] Browser WARN    Image with src "/assets/TracyGalindo.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:17:31.849] Browser WARN    Image with src "/assets/MarcelNikolic.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:17:32.006] Browser WARN    Image with src "/assets/MimiKeel.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:17:32.006] Browser WARN    Image with src "/assets/NabeelBradford.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:17:32.006] Browser WARN    Image with src "/assets/RhodeDubois.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:17:36.518] Server  LOG      ✓ Compiled in 3ms
+[00:17:39.587] Browser WARN    Image with src "/assets/EllieRoseWilkens.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:17:41.797] Server  ERROR    ⨯ "The requested resource isn't a valid image for" "/assets/Travel_Adventure_Door.jpg" "received" null
+[00:17:41.828] Server  ERROR    ⨯ "The requested resource isn't a valid image for" "/assets/Architecture_Contrast.jpg" "received" null
+[00:17:45.026] Server  ERROR    ⨯ "The requested resource isn't a valid image for" "/assets/Travel_Adventure_Door.jpg" "received" null
+[00:17:45.030] Server  ERROR    ⨯ "The requested resource isn't a valid image for" "/assets/Architecture_Contrast.jpg" "received" null
+[00:17:51.480] Server  ERROR    ⨯ "The requested resource isn't a valid image for" "/assets/Travel_Adventure_Door.jpg" "received" null
+[00:17:51.535] Server  ERROR    ⨯ "The requested resource isn't a valid image for" "/assets/Architecture_Contrast.jpg" "received" null
+[00:18:01.498] Server  LOG      ✓ Compiled in 3ms
+[00:18:02.414] Server  ERROR    ⨯ "The requested resource isn't a valid image for" "/assets/Travel_Adventure_Door.jpg" "received" null
+[00:18:02.442] Server  ERROR    ⨯ "The requested resource isn't a valid image for" "/assets/Architecture_Contrast.jpg" "received" null
+[00:18:05.130] Server  LOG      ✓ Compiled in 6ms
+[00:18:06.709] Server  ERROR    ⨯ "The requested resource isn't a valid image for" "/assets/Travel_Adventure_Door.jpg" "received" null
+[00:18:06.712] Server  ERROR    ⨯ "The requested resource isn't a valid image for" "/assets/Architecture_Contrast.jpg" "received" null
+[00:18:42.856] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:18:43.127] Browser WARN    Image with src "/assets/TracyGalindo.jpg" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
 Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
-[00:07:11.830] Browser WARN    Image with src "/assets/MimiKeel.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
-[00:07:12.229] Browser WARN    Image with src "/assets/Travel_HillsideColor.jpg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
-[00:07:34.208] Browser WARN    Image with src "/assets/Animals_Rainbow.jpg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
-[00:07:45.152] Server  LOG      ✓ Compiled in 4ms
-[00:08:04.456] Server  LOG      ✓ Compiled in 3ms
-[00:08:18.147] Server  LOG      ✓ Compiled in 3ms
-[00:08:23.430] Browser WARN    Image with src "/assets/Portrait_Background.jpg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
-[00:08:24.557] Browser WARN    Image with src "/assets/Event_PintoWedding.jpg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
-[00:08:24.713] Browser WARN    Image with src "/assets/Portrait_Wednesday.jpg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
-[00:08:24.857] Browser WARN    Image with src "/assets/Event_SeasideWedding.jpg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
-[00:08:25.025] Browser WARN    Image with src "/assets/Travel_Lonesome.jpg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
-[00:08:25.354] Browser WARN    Image with src "/assets/Event_BenevidesWedding.jpg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
-[00:08:25.498] Browser WARN    Image with src "/assets/Portrait_Nora.jpg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:18:43.127] Browser WARN    Image with src "/assets/TracyGalindo.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:18:43.127] Browser WARN    Image with src "/assets/MarcelNikolic.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:18:43.128] Browser WARN    Image with src "/assets/MimiKeel.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:18:43.128] Browser WARN    Image with src "/assets/NabeelBradford.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:18:43.128] Browser WARN    Image with src "/assets/RhodeDubois.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:18:43.128] Browser WARN    Image with src "/assets/EllieRoseWilkens.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:18:44.886] Server  ERROR    ⨯ "The requested resource isn't a valid image for" "/assets/Travel_Adventure_Door.jpg" "received" null
+[00:18:44.921] Server  ERROR    ⨯ "The requested resource isn't a valid image for" "/assets/Architecture_Contrast.jpg" "received" null
+[00:22:52.229] Server  ERROR    ⨯ "The requested resource isn't a valid image for" "/assets/Architecture_Contrast.jpg" "received" null
+[00:29:13.390] Server  LOG      ✓ Compiled in 7ms
+[00:29:19.729] Browser WARN    Image with src "/assets/Event_PintoWedding.jpg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:29:20.825] Browser WARN    Image with src "/assets/Portrait_Wednesday.jpg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:29:21.199] Browser WARN    Image with src "/assets/Event_SeasideWedding.jpg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:29:46.475] Server  LOG      ✓ Compiled in 6ms
+[00:29:48.795] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:29:49.036] Browser WARN    Image with src "/assets/MimiKeel.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:29:49.775] Browser WARN    Image with src "/assets/TracyGalindo.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:29:49.775] Browser WARN    Image with src "/assets/MarcelNikolic.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:29:49.775] Browser WARN    Image with src "/assets/RhodeDubois.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:29:49.775] Browser WARN    Image with src "/assets/EllieRoseWilkens.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:29:49.775] Browser WARN    Image with src "/assets/NabeelBradford.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:30:45.709] Server  LOG      ✓ Compiled in 3ms
+[00:30:51.732] Server  LOG      ✓ Compiled in 4ms
+[00:31:01.212] Server  LOG      ✓ Compiled in 3ms
+[00:31:12.510] Server  LOG      ✓ Compiled in 3ms
+[00:31:15.689] Server  LOG      ✓ Compiled in 3ms
+[00:32:08.751] Server  LOG      ✓ Compiled in 3ms
+[00:32:20.089] Server  LOG      ✓ Compiled in 4ms
+[00:32:31.746] Server  LOG      ✓ Compiled in 4ms
+[00:32:59.443] Server  LOG      ✓ Compiled in 3ms
+[00:33:19.550] Server  LOG      ✓ Compiled in 3ms
+[00:33:23.910] Server  LOG      ✓ Compiled in 3ms
+[00:33:29.753] Server  LOG      ✓ Compiled in 3ms
+[00:33:57.424] Browser WARN    Image with src "/assets/Travel_Lonesome.jpg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:33:58.443] Browser WARN    Image with src "/assets/Travel_HillsideColor.jpg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:33:58.584] Browser WARN    Image with src "/assets/Event_BenevidesWedding.jpg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:33:58.727] Browser WARN    Image with src "/assets/Portrait_Nora.jpg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:33:58.870] Browser WARN    Image with src "/assets/Animals_Rainbow.jpg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:33:59.012] Browser WARN    Image with src "/assets/Portrait_Background.jpg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:33:59.174] Browser WARN    Image with src "/assets/Event_PintoWedding.jpg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:33:59.314] Browser WARN    Image with src "/assets/Portrait_Wednesday.jpg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:33:59.467] Browser WARN    Image with src "/assets/Event_SeasideWedding.jpg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:35:48.059] Server  LOG      ✓ Compiled in 6ms
+[00:35:58.815] Server  LOG      ✓ Compiled in 4ms
+[00:36:54.299] Server  LOG      ✓ Compiled in 6ms
+[00:37:42.049] Server  ERROR    ⨯ ./src/components/Gallery/Gallery.js:6:1
+Module not found: Can't resolve './SortSelect.css'
+  4 | import Image from "next/image";
+  5 | import styles from "./Gallery.module.css";
+> 6 | import './SortSelect.css'; // Assure-toi que ce fichier contient le CSS ci-dessous
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 |
+  8 | export default function Gallery({ medias }) {
+  9 |   const [sortType, setSortType] = useState("popularity");
+
+
+
+Import trace:
+  Server Component:
+    ./src/components/Gallery/Gallery.js
+    ./src/app/photographes/[id]/page.js
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:37:42.051] Server  ERROR    ⨯ ./src/components/Gallery/Gallery.js:6:1
+Module not found: Can't resolve './SortSelect.css'
+  4 | import Image from "next/image";
+  5 | import styles from "./Gallery.module.css";
+> 6 | import './SortSelect.css'; // Assure-toi que ce fichier contient le CSS ci-dessous
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 |
+  8 | export default function Gallery({ medias }) {
+  9 |   const [sortType, setSortType] = useState("popularity");
+
+
+
+Import trace:
+  Server Component:
+    ./src/components/Gallery/Gallery.js
+    ./src/app/photographes/[id]/page.js
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:37:42.054] Server  ERROR    ⨯ ./src/components/Gallery/Gallery.js:6:1
+Module not found: Can't resolve './SortSelect.css'
+  4 | import Image from "next/image";
+  5 | import styles from "./Gallery.module.css";
+> 6 | import './SortSelect.css'; // Assure-toi que ce fichier contient le CSS ci-dessous
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 |
+  8 | export default function Gallery({ medias }) {
+  9 |   const [sortType, setSortType] = useState("popularity");
+
+
+
+Import trace:
+  Server Component:
+    ./src/components/Gallery/Gallery.js
+    ./src/app/photographes/[id]/page.js
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:37:42.056] Server  ERROR    ⨯ ./src/components/Gallery/Gallery.js:6:1
+Module not found: Can't resolve './SortSelect.css'
+  4 | import Image from "next/image";
+  5 | import styles from "./Gallery.module.css";
+> 6 | import './SortSelect.css'; // Assure-toi que ce fichier contient le CSS ci-dessous
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 |
+  8 | export default function Gallery({ medias }) {
+  9 |   const [sortType, setSortType] = useState("popularity");
+
+
+
+Import trace:
+  Server Component:
+    ./src/components/Gallery/Gallery.js
+    ./src/app/photographes/[id]/page.js
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:37:42.058] Server  ERROR    ⨯ ./src/components/Gallery/Gallery.js:6:1
+Module not found: Can't resolve './SortSelect.css'
+  4 | import Image from "next/image";
+  5 | import styles from "./Gallery.module.css";
+> 6 | import './SortSelect.css'; // Assure-toi que ce fichier contient le CSS ci-dessous
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 |
+  8 | export default function Gallery({ medias }) {
+  9 |   const [sortType, setSortType] = useState("popularity");
+
+
+
+Import trace:
+  Server Component:
+    ./src/components/Gallery/Gallery.js
+    ./src/app/photographes/[id]/page.js
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:37:42.060] Server  ERROR    ⨯ ./src/components/Gallery/Gallery.js:6:1
+Module not found: Can't resolve './SortSelect.css'
+  4 | import Image from "next/image";
+  5 | import styles from "./Gallery.module.css";
+> 6 | import './SortSelect.css'; // Assure-toi que ce fichier contient le CSS ci-dessous
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 |
+  8 | export default function Gallery({ medias }) {
+  9 |   const [sortType, setSortType] = useState("popularity");
+
+
+
+Import trace:
+  Server Component:
+    ./src/components/Gallery/Gallery.js
+    ./src/app/photographes/[id]/page.js
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:37:42.086] Server  LOG      ✓ Compiled in 11ms
+[00:37:42.273] Browser ERROR   ./src/components/Gallery/Gallery.js:6:1
+Module not found: Can't resolve './SortSelect.css'
+  4 | import Image from "next/image";
+  5 | import styles from "./Gallery.module.css";
+> 6 | import './SortSelect.css'; // Assure-toi que ce fichier contient le CSS ci-dessous
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 |
+  8 | export default function Gallery({ medias }) {
+  9 |   const [sortType, setSortType] = useState("popularity");
+
+Import trace:
+  Server Component:
+    ./src/components/Gallery/Gallery.js
+    ./src/app/photographes/[id]/page.js
+
+https://nextjs.org/docs/messages/module-not-found
+[00:39:44.762] Server  LOG      ✓ Compiled in 7ms
+[00:40:00.780] Server  LOG      ✓ Compiled in 6ms
+[00:40:08.051] Server  LOG      ✓ Compiled in 3ms
+[00:40:16.754] Server  LOG      ✓ Compiled in 4ms
+[00:41:54.085] Server  LOG      ✓ Compiled in 6ms
+[00:42:01.850] Server  LOG      ✓ Compiled in 4ms
+[00:42:13.613] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:42:13.792] Browser WARN    Image with src "/assets/MimiKeel.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:42:14.788] Browser WARN    Image with src "/assets/MarcelNikolic.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:42:14.788] Browser WARN    Image with src "/assets/TracyGalindo.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:42:14.788] Browser WARN    Image with src "/assets/RhodeDubois.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:42:14.788] Browser WARN    Image with src "/assets/EllieRoseWilkens.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:42:14.788] Browser WARN    Image with src "/assets/NabeelBradford.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:46:05.935] Server  LOG      ✓ Compiled in 7ms
+[00:46:06.278] Browser ERROR   uncaughtError: ReferenceError: isOpen is not defined
+[00:46:12.406] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[00:46:12.605] Server  LOG      ✓ Compiled in 5ms
+[00:46:12.656] Server  ERROR   C:\Users\Salomé\Desktop\Projets Openclassrooms\projet4\React-P5-fisheye-main\.next\dev\server\chunks\ssr\[root-of-the-server]__6926b079._.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:46:12.657] Server  ERROR    ⨯ ReferenceError: isOpen is not defined
+[00:46:12.877] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:46:13.244] Browser ERROR   uncaughtError: ReferenceError: isOpen is not defined
+[00:46:20.790] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[00:46:20.976] Server  LOG      ✓ Compiled in 6ms
+[00:46:21.021] Server  ERROR   C:\Users\Salomé\Desktop\Projets Openclassrooms\projet4\React-P5-fisheye-main\.next\dev\server\chunks\ssr\[root-of-the-server]__6926b079._.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:46:21.022] Server  ERROR    ⨯ ReferenceError: isOpen is not defined
+[00:46:21.178] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:46:21.305] Browser ERROR   uncaughtError: ReferenceError: isOpen is not defined
+[00:47:42.156] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[00:47:42.335] Server  LOG      ✓ Compiled in 6ms
+[00:47:42.604] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:47:43.284] Browser WARN    Image with src "/assets/MimiKeel.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:47:43.931] Browser WARN    Image with src "/assets/Travel_HillsideColor.jpg" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
+Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
+[00:48:19.819] Server  LOG      ✓ Compiled in 6ms
+[00:48:58.509] Server  LOG      ✓ Compiled in 4ms
+[00:49:33.580] Server  LOG      ✓ Compiled in 3ms
+[00:51:58.283] Server  LOG      ✓ Compiled in 5ms
+[00:52:27.853] Server  LOG      ✓ Compiled in 3ms
+[01:12:12.884] Server  LOG      ✓ Compiled in 4ms
+[01:12:17.471] Browser WARN    Image with src "/assets/NabeelBradford.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[01:12:17.471] Browser WARN    Image with src "/assets/MarcelNikolic.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[01:12:17.471] Browser WARN    Image with src "/assets/RhodeDubois.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[01:12:17.471] Browser WARN    Image with src "/assets/TracyGalindo.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[01:12:17.471] Browser WARN    Image with src "/assets/EllieRoseWilkens.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[01:13:26.949] Server  LOG      ✓ Compiled in 4ms
+[01:15:28.028] Server  LOG      ✓ Compiled in 6ms
+[01:16:06.889] Server  LOG      ✓ Compiled in 8ms
+[01:16:06.998] Browser ERROR   ./src/components/Gallery/Gallery.js:50:41
+Parsing ecmascript source code failed
+  48 |     <div className={styles.container}>
+  49 |       {/* SECTION TRI PERSONNALISÉ */}
+> 50 |       div className={styles.sortWrapper}>
+     |                                         ^
+  51 |         <span className={styles.sortLabel}>Trier par</span>
+  52 |         
+  53 |         <div className={styles.customSelect}>
+
+Unexpected token. Did you mean `{'>'}` or `&gt;`?
+
+Import trace:
+  Server Component:
+    ./src/components/Gallery/Gallery.js
+    ./src/app/photographes/[id]/page.js
+[01:16:25.334] Server  LOG      ✓ Compiled in 4ms
+[01:19:53.299] Server  LOG      ✓ Compiled in 9ms
+[01:19:54.983] Server  LOG      ✓ Compiled in 4ms
+[01:19:56.962] Server  LOG      ✓ Compiled in 4ms
+[01:20:23.771] Server  LOG      ✓ Compiled in 6ms
+[01:20:23.883] Browser ERROR   ./src/components/Gallery/Gallery.js:142:1
+Parsing ecmascript source code failed
+  140 |     )}
+  141 |   );
+> 142 | }
+      | ^
+
+Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+
+Import trace:
+  Server Component:
+    ./src/components/Gallery/Gallery.js
+    ./src/app/photographes/[id]/page.js
+[01:20:52.721] Server  LOG      ✓ Compiled in 5ms
+[01:21:10.224] Server  LOG      ✓ Compiled in 4ms
+[01:21:50.629] Server  LOG      ✓ Compiled in 4ms
+[01:22:24.236] Browser WARN    Image with src "/assets/Event_BenevidesWedding.jpg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[01:22:34.305] Browser WARN    Image with src "/assets/Event_PintoWedding.jpg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[01:23:27.256] Server  LOG      ✓ Compiled in 4ms
+[01:23:45.402] Server  LOG      ✓ Compiled in 4ms
+[01:24:03.181] Server  LOG      ✓ Compiled in 4ms
+[01:24:05.518] Server  LOG      ✓ Compiled in 4ms
+[01:24:17.588] Server  LOG      ✓ Compiled in 4ms
+[01:24:20.172] Server  LOG      ✓ Compiled in 3ms
+[01:27:41.872] Server  LOG      ✓ Compiled in 6ms
+[01:27:52.254] Server  LOG      ✓ Compiled in 4ms
+[01:28:17.257] Server  LOG      ✓ Compiled in 4ms
+[01:28:21.874] Server  LOG      ✓ Compiled in 3ms
+[01:28:23.437] Server  LOG      ✓ Compiled in 3ms
+[01:28:54.370] Server  LOG      ✓ Compiled in 3ms
+[01:29:35.666] Server  LOG      ✓ Compiled in 4ms
+[01:29:37.540] Server  LOG      ✓ Compiled in 3ms
+[01:29:55.894] Server  LOG      ✓ Compiled in 3ms
+[01:30:20.321] Server  LOG      ✓ Compiled in 3ms
+[01:30:23.733] Server  LOG      ✓ Compiled in 5ms
+[01:30:32.271] Server  LOG      ✓ Compiled in 4ms
+[01:31:35.493] Server  LOG      ✓ Compiled in 4ms
+[01:31:38.983] Server  LOG      ✓ Compiled in 3ms

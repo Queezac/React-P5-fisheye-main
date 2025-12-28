@@ -1,8 +1,7 @@
 import { notFound } from "next/navigation";
 import Image from "next/image";
 import { getPhotographerWithLikes, getAllMediasForPhotographer } from "../../lib/prisma-db.js";
-import Gallery from "../../../components/Gallery/Gallery.js";
-import ContactForm from "../../../components/ContactForm/ContactForm.js";
+import {Gallery, Header, ContactForm} from "../../../components";
 import styles from '../../page.module.css';
 
 export default async function PhotographerPage({ params }) {
@@ -18,15 +17,7 @@ export default async function PhotographerPage({ params }) {
 
   return (
     <div className={styles.container}>
-      <header className={styles.header}>
-        <Image
-          src="/assets/logo/logo-fisheye.png"
-          alt="Logo FishEye"
-          width={300}
-          height={300}
-          className={styles.imageHeader}
-        />
-      </header>
+      <Header displayText={false}/>
 
       <div className={styles.infoContainer}>
         <section className={styles.details}>

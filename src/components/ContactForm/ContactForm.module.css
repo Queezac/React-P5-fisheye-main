@@ -3,9 +3,10 @@
   background-color: #901C1C;
   color: #fff;
   border: none;
-  padding: 20px;
+  padding: 10px 15px;
   cursor: pointer;
-  font-size: 16px;
+  font-size: 18px;
+  font-weight: bold;
 }
 
 .modalOverlay {
@@ -14,7 +15,7 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0,0,0,0.6);
+  background: rgba(0, 0, 0, 0.6);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -23,39 +24,77 @@
 
 .modal {
   background: #DB8876;
-  padding: 2rem;
-  border-radius: 10px;
-  width: 400px;
-  max-width: 90%;
+  padding: 35px;
+  border-radius: 5px;
+  width: 550px;
+  max-width: 95%;
   position: relative;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.modal h2 {
+  font-size: 44px;
+  margin: 0;
+  line-height: 1.1;
+  font-weight: 400;
+  color: #000;
 }
 
 .closeButton {
   position: absolute;
-  top: 15px;
-  right: 20px;
+  top: 25px;
+  right: 25px;
   border: none;
   background: none;
-  font-size: 1.2rem;
   cursor: pointer;
   color: white;
-  font-size: 40px;
+  font-size: 50px;
+  line-height: 1;
 }
 
-.form input,
-.form textarea {
-  width: 100%;
-  margin-bottom: 1rem;
-  padding: 0.5rem;
+.form {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+}
+
+.form label {
+  font-size: 24px;
+  color: #313131;
+  margin-bottom: 5px;
+}
+
+.form input {
+  height: 50px;
+  margin-bottom: 15px;
   border-radius: 5px;
-  border: 1px solid #ccc;
+  border: none;
+  padding: 0 15px;
+  font-size: 18px;
+}
+
+.form textarea {
+  height: 150px;
+  margin-bottom: 25px;
+  border-radius: 5px;
+  border: none;
+  padding: 15px;
+  font-size: 18px;
+  resize: none;
 }
 
 .sendButton {
-  padding: 1em 2em;
+  width: fit-content;
+  padding: 15px 40px;
   border: none;
   background: #901C1C;
   color: white;
   border-radius: 5px;
   cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.sendButton:hover {
+  background-color: #7a1818;
 }

@@ -5,8 +5,9 @@
   background-color: #901c1c;
   border: none;
   border-radius: 5px;
-  padding: 20px;
-  font-size: 16px;
+  padding: 10px 15px;
+  font-size: 18px;
+  font-weight: bold;
 }
 
 .ContactForm-module__fw3Taq__modalOverlay {
@@ -24,11 +25,20 @@
 
 .ContactForm-module__fw3Taq__modal {
   background: #db8876;
-  border-radius: 10px;
-  width: 400px;
-  max-width: 90%;
-  padding: 2rem;
+  border-radius: 5px;
+  width: 550px;
+  max-width: 95%;
+  padding: 35px;
   position: relative;
+  box-shadow: 0 5px 15px #0003;
+}
+
+.ContactForm-module__fw3Taq__modal h2 {
+  color: #000;
+  margin: 0;
+  font-size: 44px;
+  font-weight: 400;
+  line-height: 1.1;
 }
 
 .ContactForm-module__fw3Taq__closeButton {
@@ -36,18 +46,42 @@
   color: #fff;
   background: none;
   border: none;
-  font-size: 40px;
+  font-size: 50px;
+  line-height: 1;
   position: absolute;
-  top: 15px;
-  right: 20px;
+  top: 25px;
+  right: 25px;
 }
 
-.ContactForm-module__fw3Taq__form input, .ContactForm-module__fw3Taq__form textarea {
-  border: 1px solid #ccc;
+.ContactForm-module__fw3Taq__form {
+  flex-direction: column;
+  margin-top: 20px;
+  display: flex;
+}
+
+.ContactForm-module__fw3Taq__form label {
+  color: #313131;
+  margin-bottom: 5px;
+  font-size: 24px;
+}
+
+.ContactForm-module__fw3Taq__form input {
+  border: none;
   border-radius: 5px;
-  width: 100%;
-  margin-bottom: 1rem;
-  padding: .5rem;
+  height: 50px;
+  margin-bottom: 15px;
+  padding: 0 15px;
+  font-size: 18px;
+}
+
+.ContactForm-module__fw3Taq__form textarea {
+  resize: none;
+  border: none;
+  border-radius: 5px;
+  height: 150px;
+  margin-bottom: 25px;
+  padding: 15px;
+  font-size: 18px;
 }
 
 .ContactForm-module__fw3Taq__sendButton {
@@ -56,7 +90,14 @@
   background: #901c1c;
   border: none;
   border-radius: 5px;
-  padding: 1em 2em;
+  width: fit-content;
+  padding: 15px 40px;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.ContactForm-module__fw3Taq__sendButton:hover {
+  background-color: #7a1818;
 }
 
 /*# sourceMappingURL=src_components_ContactForm_ContactForm_module_css_bad6b30c._.single.css.map*/

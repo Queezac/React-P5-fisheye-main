@@ -60,7 +60,7 @@
 
 .page-module___8aEwW__photographerCardBottom {
   color: #000;
-  z-index: 1000;
+  z-index: 999;
   background-color: #db8876;
   border-radius: 5px 5px 0 0;
   flex-direction: row;
