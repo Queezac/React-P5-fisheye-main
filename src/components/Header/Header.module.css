@@ -1,19 +1,19 @@
 .header {
-    font-family: 'DM Sans', sans-serif;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 8px 100px 40px 100px;
-    min-height: 130px;
+  font-family: 'DM Sans', sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 8px 100px 40px 100px;
+  min-height: 130px;
 }
 
 .image {
-    height: 50px;
-    width: auto;
+  height: 50px;
+  width: auto;
 }
 
 .textHeader {
-    font-size: 36px;
-    height: 50px;
-    color: #901C1C;
+  font-size: 36px;
+  height: 50px;
+  color: #901C1C;
 }

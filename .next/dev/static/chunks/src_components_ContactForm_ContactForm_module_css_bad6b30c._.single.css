@@ -5,14 +5,14 @@
   background-color: #901c1c;
   border: none;
   border-radius: 5px;
-  padding: 10px 15px;
+  padding: 20px;
   font-size: 18px;
   font-weight: bold;
 }
 
 .ContactForm-module__fw3Taq__modalOverlay {
   z-index: 1000;
-  background: #0009;
+  background: #c4c4c466;
   justify-content: center;
   align-items: center;
   width: 100%;
@@ -62,7 +62,7 @@
 .ContactForm-module__fw3Taq__form label {
   color: #313131;
   margin-bottom: 5px;
-  font-size: 24px;
+  font-size: 26px;
 }
 
 .ContactForm-module__fw3Taq__form input {

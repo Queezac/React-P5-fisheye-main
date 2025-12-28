@@ -19,9 +19,7 @@ export default function ContactForm({ photographerName }) {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-
     console.log(formData);
-
     setIsOpen(false);
   };
 
@@ -39,7 +37,7 @@ export default function ContactForm({ photographerName }) {
               <h2>Contactez-moi</h2>
               <h2>{photographerName}</h2>
             </div>
-            
+
             <form onSubmit={handleSubmit} className={styles.form}>
               <label>Prénom</label>
               <input
@@ -65,7 +63,7 @@ export default function ContactForm({ photographerName }) {
                 required
               />
 
-              <label>Message</label>
+              <label>Votre message</label>
               <textarea
                 name="message"
                 onChange={handleChange}

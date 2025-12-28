@@ -1,4 +1,3 @@
-import React from "react";
 import { getAllPhotographers } from "../../app/lib/prisma-db.js";
 import Image from "next/image";
 import Link from "next/link";

@@ -69,95 +69,11 @@
   padding: 15px;
 }
 
-.Gallery-module__Sa_FLW__modalOverlay {
-  z-index: 1000;
-  background: #000c;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  height: 100%;
-  display: flex;
-  position: fixed;
-  top: 0;
-  left: 0;
-}
-
-.Gallery-module__Sa_FLW__modal {
-  align-items: left;
-  color: #901c1c;
-  background: #fff;
-  border-radius: 10px;
-  flex-direction: column;
-  max-width: 90%;
-  max-height: 90%;
-  padding: 1rem;
-  display: flex;
-  position: relative;
-}
-
-.Gallery-module__Sa_FLW__modal img {
-  object-fit: contain;
-  pointer-events: none;
-  border-radius: 5px;
-  width: 60vw;
-  max-height: 80vh;
-}
-
-.Gallery-module__Sa_FLW__modalImg {
-  pointer-events: none;
-  border-radius: 5px;
-}
-
-.Gallery-module__Sa_FLW__modal p {
-  z-index: 11;
-  margin-top: 1rem;
-  font-size: 1.2rem;
-}
-
-.Gallery-module__Sa_FLW__closeButton {
-  color: #901c1c;
-  cursor: pointer;
-  background: none;
-  border: none;
-  font-size: 1.5rem;
-  position: absolute;
-  top: 10px;
-  right: 10px;
-}
-
-.Gallery-module__Sa_FLW__prevButton, .Gallery-module__Sa_FLW__nextButton {
-  color: #901c1c;
-  cursor: pointer;
-  background: none;
-  border: none;
-  font-size: 2rem;
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-}
-
-.Gallery-module__Sa_FLW__closeButton, .Gallery-module__Sa_FLW__prevButton, .Gallery-module__Sa_FLW__nextButton {
-  z-index: 10;
-  cursor: pointer;
-  background: none;
-  border: none;
-  font-size: 2rem;
-  position: absolute;
-}
-
-.Gallery-module__Sa_FLW__prevButton {
-  left: 10px;
-}
-
-.Gallery-module__Sa_FLW__nextButton {
-  right: 10px;
-}
-
 .Gallery-module__Sa_FLW__sortWrapper {
   align-items: center;
   gap: 20px;
   margin-bottom: 30px;
-  padding: 0 100px;
+  padding: 0 100px 20px;
   display: flex;
 }
 
@@ -256,6 +172,79 @@
   transform: rotate(-135deg);
 }
 
+.Gallery-module__Sa_FLW__modalOverlay {
+  z-index: 1000;
+  background: #c4c4c466;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  position: fixed;
+  inset: 0;
+}
+
+.Gallery-module__Sa_FLW__modal {
+  background: #fff;
+  border-radius: 5px;
+  justify-content: center;
+  align-items: center;
+  width: 65vw;
+  height: 90vh;
+  padding: 20px;
+  display: flex;
+}
+
+.Gallery-module__Sa_FLW__contentScaler {
+  flex-direction: row;
+  align-items: center;
+  display: flex;
+}
+
+.Gallery-module__Sa_FLW__modalImg {
+  object-fit: cover;
+  object-position: center;
+  width: 50vw;
+  height: 85vh;
+  display: block;
+}
+
+.Gallery-module__Sa_FLW__sideColumn {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 60px;
+  height: 90vh;
+  display: flex;
+  position: relative;
+}
+
+.Gallery-module__Sa_FLW__closeButton {
+  color: #901c1c;
+  cursor: pointer;
+  background: none;
+  border: none;
+  font-size: 40px;
+  line-height: 1;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.Gallery-module__Sa_FLW__modalTitle {
+  color: #901c1c;
+  margin: 15px 0 0;
+  font-size: 24px;
+  font-weight: 400;
+}
+
+.Gallery-module__Sa_FLW__navButton {
+  color: #901c1c;
+  cursor: pointer;
+  background: none;
+  border: none;
+  flex-shrink: 0;
+  font-size: 3rem;
+}
+
 /* [project]/src/components/ContactForm/ContactForm.module.css [app-client] (css) */
 .ContactForm-module__fw3Taq__contactForm {
   color: #fff;
@@ -263,14 +252,14 @@
   background-color: #901c1c;
   border: none;
   border-radius: 5px;
-  padding: 10px 15px;
+  padding: 20px;
   font-size: 18px;
   font-weight: bold;
 }
 
 .ContactForm-module__fw3Taq__modalOverlay {
   z-index: 1000;
-  background: #0009;
+  background: #c4c4c466;
   justify-content: center;
   align-items: center;
   width: 100%;
@@ -320,7 +309,7 @@
 .ContactForm-module__fw3Taq__form label {
   color: #313131;
   margin-bottom: 5px;
-  font-size: 24px;
+  font-size: 26px;
 }
 
 .ContactForm-module__fw3Taq__form input {

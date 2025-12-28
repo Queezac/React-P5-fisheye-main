@@ -9,10 +9,8 @@ export default function Gallery({ medias }) {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [currentIndex, setCurrentIndex] = useState(0);
   
-  // État pour gérer l'ouverture du menu de tri
   const [isOpen, setIsOpen] = useState(false);
 
-  // Logique de tri
   const sortedMedias = [...medias].sort((a, b) => {
     if (sortType === "popularity") return b.likes - a.likes;
     if (sortType === "date") return new Date(b.date) - new Date(a.date);
@@ -37,7 +35,6 @@ export default function Gallery({ medias }) {
 
   const currentMedia = sortedMedias[currentIndex];
 
-  // Helper pour afficher le label sélectionné
   const getSortLabel = () => {
     if (sortType === 'popularity') return 'Popularité';
     if (sortType === 'date') return 'Date';
@@ -110,30 +107,39 @@ export default function Gallery({ medias }) {
       {isModalOpen && currentMedia && (
         <div className={styles.modalOverlay} onClick={closeModal}>
           <div className={styles.modal} onClick={(e) => e.stopPropagation()}>
-            <button className={styles.closeButton} onClick={closeModal}>✖</button>
-            <button className={styles.prevButton} onClick={prevMedia}>❮</button>
+            
+            <div className={styles.contentScaler}>
+              <div className={styles.sideColumn}>
+                <button className={styles.navButton} onClick={prevMedia}>❮</button>
+              </div>
 
-            <div className={styles.modalContent}>
-              {currentMedia.image ? (
-                <Image
-                  src={`/assets/${currentMedia.image}`}
-                  alt={currentMedia.title}
-                  width={800}
-                  height={600}
-                  className={styles.modalImg}
-                />
-              ) : (
-                <video controls autoPlay className={styles.modalImg}>
-                  <source src={`/assets/${currentMedia.video}`} type="video/mp4" />
-                </video>
-              )}
-              <p className={styles.modalTitle}>{currentMedia.title}</p>
+              <div className={styles.mediaWrapper}>
+                {currentMedia.image ? (
+                  <Image
+                    src={`/assets/${currentMedia.image}`}
+                    alt={currentMedia.title}
+                    width={1000}
+                    height={900}
+                    className={styles.modalImg}
+                  />
+                ) : (
+                  <video controls autoPlay className={styles.modalImg}>
+                    <source src={`/assets/${currentMedia.video}`} type="video/mp4" />
+                  </video>
+                )}
+                <p className={styles.modalTitle}>{currentMedia.title}</p>
+              </div>
+
+              <div className={styles.sideColumn}>
+                <button className={styles.closeButton} onClick={closeModal}>✖</button>
+                <button className={styles.navButton} onClick={nextMedia}>❯</button>
+              </div>
             </div>
 
-            <button className={styles.nextButton} onClick={nextMedia}>❯</button>
           </div>
         </div>
       )}
+
     </div>
   );
 }

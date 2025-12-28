@@ -31,6 +31,9 @@
   color: #901C1C;
 }
 
+
+
+/********************** Trie ***********************/
 .sortContainer {
   display: flex;
   flex-direction: row;
@@ -48,100 +51,11 @@
   cursor: pointer;
 }
 
-.modalOverlay {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.8);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  z-index: 1000;
-}
-
-.modal {
-  position: relative;
-  background: white;
-  padding: 1rem;
-  border-radius: 10px;
-  max-width: 90%;
-  max-height: 90%;
-  display: flex;
-  flex-direction: column;
-  align-items: left;
-  color: #901C1C;
-}
-
-.modal img {
-  width: 60vw;
-  max-height: 80vh;
-  object-fit: contain;
-  border-radius: 5px;
-  pointer-events: none;
-}
-
-.modalImg {
-  border-radius: 5px;
-  pointer-events: none;
-}
-
-.modal p {
-  margin-top: 1rem;
-  font-size: 1.2rem;
-  z-index: 11;
-}
-
-
-.closeButton {
-  position: absolute;
-  top: 10px;
-  right: 10px;
-  font-size: 1.5rem;
-  color: #901C1C;
-  background: none;
-  border: none;
-  cursor: pointer;
-}
-
-.prevButton, .nextButton {
-  position: absolute;
-  top: 50%;
-  font-size: 2rem;
-  color: #901C1C;
-  background: none;
-  border: none;
-  cursor: pointer;
-  transform: translateY(-50%);
-}
-
-.closeButton, .prevButton, .nextButton {
-  position: absolute;
-  z-index: 10;
-  background: none;
-  border: none;
-  cursor: pointer;
-  font-size: 2rem;
-}
-
-.prevButton { left: 10px; }
-.nextButton { right: 10px; }
-
-
-
-
-
-
-
-
-
-
 .sortWrapper {
   display: flex;
   align-items: center;
   gap: 20px;
-  padding: 0 100px;
+  padding: 0 100px 20px 100px;
   margin-bottom: 30px;
 }
 
@@ -232,3 +146,81 @@
 
 .down { transform: rotate(45deg); margin-bottom: 2px; }
 .up { transform: rotate(-135deg); margin-top: 4px; }
+
+
+
+
+
+/********************** Modal ***********************/
+.modalOverlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(196, 196, 196, 0.4);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal {
+  background: white;
+  width: 65vw; 
+  height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  padding: 20px;
+}
+
+.contentScaler {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.modalImg {
+  width: 50vw;
+  height: 85vh;
+  object-fit: cover; 
+  object-position: center; 
+  display: block;
+}
+
+.sideColumn {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 60px;
+  height: 90vh;
+  position: relative;
+}
+
+.closeButton {
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-size: 40px;
+  color: #901C1C;
+  background: none;
+  border: none;
+  cursor: pointer;
+  line-height: 1;
+}
+
+.modalTitle {
+  font-size: 24px;
+  color: #901C1C;
+  margin: 15px 0 0 0;
+  font-weight: 400;
+}
+
+.navButton {
+  font-size: 3rem;
+  color: #901C1C;
+  background: none;
+  border: none;
+  cursor: pointer;
+  flex-shrink: 0;
+}
