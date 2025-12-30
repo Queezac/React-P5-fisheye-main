@@ -4,14 +4,39 @@ import { useState } from "react";
 import Image from "next/image";
 import styles from "./Gallery.module.css";
 
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faHeart as faHeartSolid } from "@fortawesome/free-solid-svg-icons";
+import { faHeart as faHeartRegular } from "@fortawesome/free-regular-svg-icons";
+
+import { useHotkeys } from "react-hotkeys-hook";
+
 export default function Gallery({ medias }) {
+
+  const [galleryMedias, setGalleryMedias] = useState(medias);
   const [sortType, setSortType] = useState("popularity");
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [currentIndex, setCurrentIndex] = useState(0);
-  
   const [isOpen, setIsOpen] = useState(false);
 
-  const sortedMedias = [...medias].sort((a, b) => {
+  const handleLike = (e, mediaId) => {
+    e.stopPropagation();
+    
+    setGalleryMedias(prevMedias => 
+      prevMedias.map(media => {
+        if (media.id === mediaId) {
+          const isLiked = !media.isLiked;
+          return { 
+            ...media, 
+            likes: isLiked ? media.likes + 1 : media.likes - 1,
+            isLiked: isLiked 
+          };
+        }
+        return media;
+      })
+    );
+  };
+
+  const sortedMedias = [...galleryMedias].sort((a, b) => {
     if (sortType === "popularity") return b.likes - a.likes;
     if (sortType === "date") return new Date(b.date) - new Date(a.date);
     if (sortType === "title") return a.title.localeCompare(b.title);
@@ -41,10 +66,25 @@ export default function Gallery({ medias }) {
     if (sortType === 'title') return 'Titre';
   };
 
+  
+  useHotkeys('arrowright', () => nextMedia(), {
+    enabled: isModalOpen,
+    enableOnFormTags: false
+  });
+
+  useHotkeys('arrowleft', () => prevMedia(), {
+    enabled: isModalOpen,
+  });
+
+  useHotkeys('escape', () => closeModal(), {
+    enabled: isModalOpen,
+  });
+
+
   return (
-    <div className={styles.container}>
-      <div className={styles.sortWrapper}>
-        <span className={styles.sortLabel}>Trier par</span>
+    <section className={styles.container} aria-label="Galerie de médias">
+      <nav className={styles.sortWrapper} aria-label="Options de tri">
+        <label className={styles.sortLabel}>Trier par</label>
         
         <div className={styles.customSelect}>
           <button className={styles.selectTrigger} onClick={() => setIsOpen(!isOpen)} aria-expanded={isOpen}>
@@ -72,7 +112,7 @@ export default function Gallery({ medias }) {
             </div>
           )}
         </div>
-      </div>
+      </nav>
       <div className={styles.gallery}>
         {sortedMedias.map((media, index) => (
           <div
@@ -97,20 +137,40 @@ export default function Gallery({ medias }) {
             )}
 
             <div className={styles.mediaInfo}>
-              <p>{media.title}</p>
-              <p className={styles.likes}>{media.likes} ♥</p>
+              <h2 className={styles.mediaTitle}>{media.title}</h2>
+              <div className={styles.likesContainer}>
+                <span className={styles.likesCount}>{media.likes}</span>
+                <button className={styles.likeButton} onClick={(e) => handleLike(e, media.id)} aria-label="Aimer cette photo">
+                  <FontAwesomeIcon 
+                    icon={media.isLiked ? faHeartSolid : faHeartRegular} 
+                    style={{ color: "#901c1c" }} 
+                  />
+                </button>
+              </div>
             </div>
           </div>
         ))}
       </div>
 
       {isModalOpen && currentMedia && (
-        <div className={styles.modalOverlay} onClick={closeModal}>
+        <div 
+          className={styles.modalOverlay} 
+          onClick={closeModal}
+          role="dialog"
+          aria-modal="true"
+          aria-label="Vue agrandie du média"
+        >
           <div className={styles.modal} onClick={(e) => e.stopPropagation()}>
             
             <div className={styles.contentScaler}>
               <div className={styles.sideColumn}>
-                <button className={styles.navButton} onClick={prevMedia}>❮</button>
+                <button 
+                  className={styles.navButton} 
+                  onClick={prevMedia}
+                  aria-label="Image précédente"
+                >
+                  ❮
+                </button>
               </div>
 
               <div className={styles.mediaWrapper}>
@@ -121,18 +181,31 @@ export default function Gallery({ medias }) {
                     width={1000}
                     height={900}
                     className={styles.modalImg}
+                    priority
                   />
                 ) : (
-                  <video controls autoPlay className={styles.modalImg}>
+                  <video controls autoPlay className={styles.modalImg} aria-label={currentMedia.title}>
                     <source src={`/assets/${currentMedia.video}`} type="video/mp4" />
                   </video>
                 )}
-                <p className={styles.modalTitle}>{currentMedia.title}</p>
+                <p className={styles.modalTitle} aria-hidden="false">{currentMedia.title}</p>
               </div>
 
               <div className={styles.sideColumn}>
-                <button className={styles.closeButton} onClick={closeModal}>✖</button>
-                <button className={styles.navButton} onClick={nextMedia}>❯</button>
+                <button 
+                  className={styles.closeButton} 
+                  onClick={closeModal}
+                  aria-label="Fermer la fenêtre"
+                >
+                  ✖
+                </button>
+                <button 
+                  className={styles.navButton} 
+                  onClick={nextMedia}
+                  aria-label="Image suivante"
+                >
+                  ❯
+                </button>
               </div>
             </div>
 
@@ -140,6 +213,6 @@ export default function Gallery({ medias }) {
         </div>
       )}
 
-    </div>
+    </section>
   );
 }

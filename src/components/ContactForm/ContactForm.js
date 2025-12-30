@@ -39,38 +39,48 @@ export default function ContactForm({ photographerName }) {
             </div>
 
             <form onSubmit={handleSubmit} className={styles.form}>
-              <label>Prénom</label>
+              <label htmlFor="firstName">Prénom</label>
               <input
+                id="firstName"
                 type="text"
                 name="firstName"
                 onChange={handleChange}
                 required
+                aria-required="true"
               />
 
-              <label>Nom</label>
+              <label htmlFor="lastName">Nom</label>
               <input
+                id="lastName"
                 type="text"
                 name="lastName"
                 onChange={handleChange}
                 required
+                aria-required="true"
               />
 
-              <label>Email</label>
+              <label htmlFor="email">Email</label>
               <input
+                id="email"
                 type="email"
                 name="email"
                 onChange={handleChange}
                 required
+                aria-required="true"
               />
 
-              <label>Votre message</label>
+              <label htmlFor="message">Votre message</label>
               <textarea
+                id="message"
                 name="message"
                 onChange={handleChange}
                 required
+                aria-required="true"
               />
 
-              <button className={styles.sendButton} type="submit">Envoyer</button>
+              <button className={styles.sendButton} type="submit" aria-label="Envoyer le message">
+                Envoyer
+              </button>
             </form>
           </div>
         </div>

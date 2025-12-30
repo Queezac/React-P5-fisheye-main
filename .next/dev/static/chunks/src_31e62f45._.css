@@ -52,6 +52,26 @@
   display: flex;
 }
 
+.Gallery-module__Sa_FLW__mediaTitle {
+  font-size: 24px;
+  font-weight: 400;
+}
+
+.Gallery-module__Sa_FLW__likesContainer {
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.Gallery-module__Sa_FLW__likeButton {
+  cursor: pointer;
+  background: none;
+  border: none;
+  gap: 5px;
+  font-size: 20px;
+}
+
 .Gallery-module__Sa_FLW__sortContainer {
   flex-direction: row;
   align-items: center;

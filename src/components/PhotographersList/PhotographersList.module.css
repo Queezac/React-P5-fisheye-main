@@ -1,11 +1,11 @@
 .gridContainer {
   font-family: 'DM Sans', sans-serif;
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 40px;
-  justify-content: center;
+  grid-template-columns: repeat(3, 350px);
+  gap: 70px 40px;
+  justify-content: space-between;
   justify-items: center;
-  padding: 20px 0;
+  padding: 50px 100px;
 }
 
 .photographerCard {
@@ -56,19 +56,19 @@
 }
 
 .cityCountry {
-  font-size: 13px;
+  font-size: 18px;
   color: #901C1C;
   margin: 3px 0;
 }
 
 .tagline {
-  font-size: 10px;
+  font-size: 15px;
   color: #000000;
   margin: 4px 0;
 }
 
 .price {
-  font-size: 9px;
+  font-size: 14px;
   color: #757575;
   margin: 2px 0;
 }
