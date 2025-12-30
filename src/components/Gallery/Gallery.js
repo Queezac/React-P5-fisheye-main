@@ -3,11 +3,9 @@
 import { useState } from "react";
 import Image from "next/image";
 import styles from "./Gallery.module.css";
-
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faHeart as faHeartSolid } from "@fortawesome/free-solid-svg-icons";
 import { faHeart as faHeartRegular } from "@fortawesome/free-regular-svg-icons";
-
 import { useHotkeys } from "react-hotkeys-hook";
 
 export default function Gallery({ medias }) {
@@ -69,7 +67,6 @@ export default function Gallery({ medias }) {
   
   useHotkeys('arrowright', () => nextMedia(), {
     enabled: isModalOpen,
-    enableOnFormTags: false
   });
 
   useHotkeys('arrowleft', () => prevMedia(), {
