@@ -204,6 +204,64 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$Contact
 ;
 __turbopack_context__.n(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$ContactForm$2f$ContactForm$2e$js__$5b$app$2d$rsc$5d$__$28$client__reference__proxy$29$__);
 }),
+"[project]/src/components/PhotographerLikes/PhotographerLikes.js [app-rsc] (ecmascript)", ((__turbopack_context__, module, exports) => {
+
+/*#__PURE__*/ const { jsxDEV: _jsxDEV } = __turbopack_context__.r("[project]/node_modules/next/dist/server/route-modules/app-page/vendored/rsc/react-jsx-dev-runtime.js [app-rsc] (ecmascript)");
+_jsxDEV("aside", {
+    className: styles.photographerCardBottom,
+    "aria-label": "Statistiques et tarif du photographe",
+    children: [
+        /*#__PURE__*/ _jsxDEV("div", {
+            className: styles.likesTotal,
+            children: [
+                /*#__PURE__*/ _jsxDEV("span", {
+                    children: photographer.totalLikes
+                }, void 0, false, {
+                    fileName: "[project]/src/components/PhotographerLikes/PhotographerLikes.js",
+                    lineNumber: 3,
+                    columnNumber: 9
+                }, /*TURBOPACK member replacement*/ __turbopack_context__.e),
+                /*#__PURE__*/ _jsxDEV("span", {
+                    "aria-label": "likes total",
+                    role: "img",
+                    children: /*#__PURE__*/ _jsxDEV(FontAwesomeIcon, {
+                        icon: faHeartSolid,
+                        style: {
+                            color: "black"
+                        }
+                    }, void 0, false, {
+                        fileName: "[project]/src/components/PhotographerLikes/PhotographerLikes.js",
+                        lineNumber: 5,
+                        columnNumber: 9
+                    }, /*TURBOPACK member replacement*/ __turbopack_context__.e)
+                }, void 0, false, {
+                    fileName: "[project]/src/components/PhotographerLikes/PhotographerLikes.js",
+                    lineNumber: 4,
+                    columnNumber: 9
+                }, /*TURBOPACK member replacement*/ __turbopack_context__.e)
+            ]
+        }, void 0, true, {
+            fileName: "[project]/src/components/PhotographerLikes/PhotographerLikes.js",
+            lineNumber: 2,
+            columnNumber: 5
+        }, /*TURBOPACK member replacement*/ __turbopack_context__.e),
+        /*#__PURE__*/ _jsxDEV("p", {
+            children: [
+                photographer.price,
+                "€ / jour"
+            ]
+        }, void 0, true, {
+            fileName: "[project]/src/components/PhotographerLikes/PhotographerLikes.js",
+            lineNumber: 11,
+            columnNumber: 5
+        }, /*TURBOPACK member replacement*/ __turbopack_context__.e)
+    ]
+}, void 0, true, {
+    fileName: "[project]/src/components/PhotographerLikes/PhotographerLikes.js",
+    lineNumber: 1,
+    columnNumber: 1
+}, /*TURBOPACK member replacement*/ __turbopack_context__.e);
+}),
 "[project]/src/components/index.js [app-rsc] (ecmascript) <locals>", ((__turbopack_context__) => {
 "use strict";
 
@@ -211,6 +269,8 @@ __turbopack_context__.s([]);
 var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$Header$2f$Header$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/src/components/Header/Header.js [app-rsc] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$Gallery$2f$Gallery$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/src/components/Gallery/Gallery.js [app-rsc] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$ContactForm$2f$ContactForm$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/src/components/ContactForm/ContactForm.js [app-rsc] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$PhotographerLikes$2f$PhotographerLikes$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/src/components/PhotographerLikes/PhotographerLikes.js [app-rsc] (ecmascript)");
+;
 ;
 ;
 ;
@@ -242,6 +302,15 @@ __turbopack_context__.s([
     ()=>__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$ContactForm$2f$ContactForm$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["default"]
 ]);
 var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$ContactForm$2f$ContactForm$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/src/components/ContactForm/ContactForm.js [app-rsc] (ecmascript)");
+}),
+"[project]/src/components/PhotographerLikes/PhotographerLikes.js [app-rsc] (ecmascript) <export default as PhotographerLikes>", ((__turbopack_context__) => {
+"use strict";
+
+__turbopack_context__.s([
+    "PhotographerLikes",
+    ()=>__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$PhotographerLikes$2f$PhotographerLikes$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["default"]
+]);
+var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$PhotographerLikes$2f$PhotographerLikes$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/src/components/PhotographerLikes/PhotographerLikes.js [app-rsc] (ecmascript)");
 }),
 "[project]/src/app/page.module.css [app-rsc] (css module)", ((__turbopack_context__) => {
 
@@ -276,6 +345,7 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$index$2
 var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$Gallery$2f$Gallery$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__$3c$export__default__as__Gallery$3e$__ = __turbopack_context__.i("[project]/src/components/Gallery/Gallery.js [app-rsc] (ecmascript) <export default as Gallery>");
 var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$Header$2f$Header$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__$3c$export__default__as__Header$3e$__ = __turbopack_context__.i("[project]/src/components/Header/Header.js [app-rsc] (ecmascript) <export default as Header>");
 var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$ContactForm$2f$ContactForm$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__$3c$export__default__as__ContactForm$3e$__ = __turbopack_context__.i("[project]/src/components/ContactForm/ContactForm.js [app-rsc] (ecmascript) <export default as ContactForm>");
+var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$PhotographerLikes$2f$PhotographerLikes$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__$3c$export__default__as__PhotographerLikes$3e$__ = __turbopack_context__.i("[project]/src/components/PhotographerLikes/PhotographerLikes.js [app-rsc] (ecmascript) <export default as PhotographerLikes>");
 var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$page$2e$module$2e$css__$5b$app$2d$rsc$5d$__$28$css__module$29$__ = __turbopack_context__.i("[project]/src/app/page.module.css [app-rsc] (css module)");
 ;
 ;
@@ -412,7 +482,7 @@ async function PhotographerPage({ params }) {
                 lineNumber: 29,
                 columnNumber: 7
             }, this),
-            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(PhotographerLikes, {}, void 0, false, {
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$PhotographerLikes$2f$PhotographerLikes$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__$3c$export__default__as__PhotographerLikes$3e$__["PhotographerLikes"], {}, void 0, false, {
                 fileName: "[project]/src/app/photographes/[id]/page.js",
                 lineNumber: 58,
                 columnNumber: 7
@@ -431,4 +501,4 @@ __turbopack_context__.n(__turbopack_context__.i("[project]/src/app/photographes/
 }),
 ];
 
-//# sourceMappingURL=%5Broot-of-the-server%5D__13780d2f._.js.map
+//# sourceMappingURL=%5Broot-of-the-server%5D__502161c4._.js.map

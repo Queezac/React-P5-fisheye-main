@@ -1,9 +1,7 @@
 import { notFound } from "next/navigation";
 import Image from "next/image";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faHeart as faHeartSolid } from "@fortawesome/free-solid-svg-icons";
 import { getPhotographerWithLikes, getAllMediasForPhotographer } from "../../lib/prisma-db.js";
-import { Gallery, Header, ContactForm } from "../../../components";
+import { Gallery, Header, ContactForm, PhotographerLikes } from "../../../components";
 import styles from '../../page.module.css';
 
 export const metadata = {
@@ -52,21 +50,8 @@ export default async function PhotographerPage({ params }) {
           </section>
         </div>
 
-        <Gallery medias={medias} />
+        <PhotographerLikes photographer={photographer} medias={medias} />
       </main>
-
-      <aside className={styles.photographerCardBottom} aria-label="Statistiques et tarif du photographe">
-        <div className={styles.likesTotal}>
-          <span>{photographer.totalLikes}</span>
-          <span aria-label="likes total" role="img">
-            <FontAwesomeIcon 
-              icon={faHeartSolid} 
-              style={{ color: "black" }} 
-            />
-          </span>
-        </div>
-        <p>{photographer.price}€ / jour</p>
-      </aside>
     </div>
   );
 }

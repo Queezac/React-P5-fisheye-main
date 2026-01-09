@@ -8,7 +8,7 @@ import { faHeart as faHeartSolid } from "@fortawesome/free-solid-svg-icons";
 import { faHeart as faHeartRegular } from "@fortawesome/free-regular-svg-icons";
 import { useHotkeys } from "react-hotkeys-hook";
 
-export default function Gallery({ medias }) {
+export default function Gallery({ medias, onLikeChange }) {
 
   const [galleryMedias, setGalleryMedias] = useState(medias);
   const [sortType, setSortType] = useState("popularity");
@@ -19,14 +19,23 @@ export default function Gallery({ medias }) {
   const handleLike = (e, mediaId) => {
     e.stopPropagation();
     
-    setGalleryMedias(prevMedias => 
+    const targetMedia = galleryMedias.find(m => m.id === mediaId);
+    if (!targetMedia) return;
+
+    const isLiked = !targetMedia.isLiked;
+    const diff = isLiked ? 1 : -1;
+
+    if (onLikeChange) {
+      onLikeChange(diff);
+    }
+
+    setGalleryMedias(prevMedias =>
       prevMedias.map(media => {
         if (media.id === mediaId) {
-          const isLiked = !media.isLiked;
-          return { 
-            ...media, 
+          return {
+            ...media,
             likes: isLiked ? media.likes + 1 : media.likes - 1,
-            isLiked: isLiked 
+            isLiked: isLiked
           };
         }
         return media;
@@ -109,6 +118,7 @@ export default function Gallery({ medias }) {
             </div>
           )}
         </div>
+        
       </nav>
       <div className={styles.gallery}>
         {sortedMedias.map((media, index) => (

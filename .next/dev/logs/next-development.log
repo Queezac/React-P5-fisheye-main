@@ -1,6 +1,1191 @@
-[00:00:01.775] Server  LOG      ✓ Ready in 1217ms
-[00:00:03.862] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:00:04.108] Browser WARN    Image with src "/assets/TracyGalindo.jpg" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
+[00:00:01.852] Server  LOG      ✓ Ready in 1262ms
+[00:00:10.509] Server  LOG      ○ Compiling / ...
+[00:00:11.812] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:00:12.033] Browser WARN    Image with src "/assets/TracyGalindo.jpg" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
 Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
-[00:04:00.933] Server  LOG      ✓ Compiled in 9ms
-[00:09:34.767] Server  LOG      ✓ Compiled in 5ms
+[00:03:53.893] Server  LOG      ✓ Compiled in 10ms
+[01:13:06.473] Server  ERROR   C:\Users\Salomé\Desktop\Projets Openclassrooms\projet4\React-P5-fisheye-main\.next\dev\server\chunks\ssr\[root-of-the-server]__13780d2f._.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[01:13:06.476] Server  ERROR    ⨯ ReferenceError: PhotographerLikes is not defined
+[01:13:06.997] Browser ERROR   uncaughtError: ReferenceError: PhotographerLikes is not defined
+[01:13:13.149] Server  ERROR   C:\Users\Salomé\Desktop\Projets Openclassrooms\projet4\React-P5-fisheye-main\.next\dev\server\chunks\ssr\[root-of-the-server]__13780d2f._.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[01:13:13.150] Server  ERROR    ⨯ ReferenceError: PhotographerLikes is not defined
+[01:13:13.366] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[01:13:13.366] Browser ERROR   uncaughtError: ReferenceError: PhotographerLikes is not defined
+[01:13:13.545] Browser ERROR   uncaughtError: TypeError: Failed to execute 'measure' on 'Performance': '​PhotographerPage' cannot have a negative time stamp.
+[01:13:30.403] Browser ERROR   ./src/app/photographes/[id]/page.js:6:1
+Export PhotographerLikes doesn't exist in target module
+  4 | import { faHeart as faHeartSolid } from "@fortawesome/free-solid-svg-icons";
+  5 | import { getPhotographerWithLikes, getAllMediasForPhotographer } from "../../lib/prisma-db.js";
+> 6 | import { Gallery, Header, ContactForm, PhotographerLikes } from "../../../components";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 | import styles from '../../page.module.css';
+  8 |
+  9 | export const metadata = {
+
+The export PhotographerLikes was not found in module [project]/src/components/index.js [app-rsc] (ecmascript).
+Did you mean to import ContactForm?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+[01:13:53.501] Server  ERROR   C:\Users\Salomé\Desktop\Projets Openclassrooms\projet4\React-P5-fisheye-main\.next\dev\server\chunks\ssr\[root-of-the-server]__502161c4._.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[01:13:53.503] Server  ERROR   C:\Users\Salomé\Desktop\Projets Openclassrooms\projet4\React-P5-fisheye-main\.next\dev\server\chunks\ssr\[turbopack]_runtime.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[01:13:53.520] Server  ERROR   C:\Users\Salomé\Desktop\Projets Openclassrooms\projet4\React-P5-fisheye-main\.next\dev\server\chunks\ssr\node_modules_6136344f._.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[01:13:53.557] Server  ERROR   C:\Users\Salomé\Desktop\Projets Openclassrooms\projet4\React-P5-fisheye-main\node_modules\next\dist\compiled\next-server\app-page-turbo.runtime.dev.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[01:13:53.558] Server  ERROR   C:\Users\Salomé\Desktop\Projets Openclassrooms\projet4\React-P5-fisheye-main\node_modules\next\dist\server\lib\trace\tracer.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[01:13:53.563] Server  ERROR   C:\Users\Salomé\Desktop\Projets Openclassrooms\projet4\React-P5-fisheye-main\node_modules\next\dist\server\base-server.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[01:13:53.565] Server  ERROR   C:\Users\Salomé\Desktop\Projets Openclassrooms\projet4\React-P5-fisheye-main\node_modules\next\dist\server\next-server.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[01:13:53.566] Server  ERROR    ⨯ ReferenceError: styles is not defined
+[01:13:53.568] Server  ERROR   C:\Users\Salomé\Desktop\Projets Openclassrooms\projet4\React-P5-fisheye-main\.next\dev\server\chunks\ssr\[root-of-the-server]__502161c4._.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[01:13:53.569] Server  ERROR   C:\Users\Salomé\Desktop\Projets Openclassrooms\projet4\React-P5-fisheye-main\.next\dev\server\chunks\ssr\[turbopack]_runtime.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[01:13:53.569] Server  ERROR   C:\Users\Salomé\Desktop\Projets Openclassrooms\projet4\React-P5-fisheye-main\.next\dev\server\chunks\ssr\node_modules_6136344f._.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[01:13:53.570] Server  ERROR   C:\Users\Salomé\Desktop\Projets Openclassrooms\projet4\React-P5-fisheye-main\node_modules\next\dist\compiled\next-server\app-page-turbo.runtime.dev.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[01:13:53.571] Server  ERROR   C:\Users\Salomé\Desktop\Projets Openclassrooms\projet4\React-P5-fisheye-main\node_modules\next\dist\server\lib\trace\tracer.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[01:13:53.572] Server  ERROR   C:\Users\Salomé\Desktop\Projets Openclassrooms\projet4\React-P5-fisheye-main\node_modules\next\dist\server\base-server.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[01:13:53.572] Server  ERROR   C:\Users\Salomé\Desktop\Projets Openclassrooms\projet4\React-P5-fisheye-main\node_modules\next\dist\server\next-server.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[01:13:53.573] Server  ERROR    ⨯ ReferenceError: styles is not defined
+[01:13:54.030] Server  ERROR    ⨯ Failed to generate static paths for /photographes/[id]:
+[01:13:54.031] Server  ERROR   C:\Users\Salomé\Desktop\Projets Openclassrooms\projet4\React-P5-fisheye-main\.next\dev\server\chunks\ssr\[root-of-the-server]__502161c4._.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[01:13:54.031] Server  ERROR   C:\Users\Salomé\Desktop\Projets Openclassrooms\projet4\React-P5-fisheye-main\.next\dev\server\chunks\ssr\[turbopack]_runtime.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[01:13:54.031] Server  ERROR   ReferenceError: styles is not defined
+[01:13:54.549] Browser ERROR   uncaughtError: ReferenceError: styles is not defined
+[01:15:27.252] Server  ERROR    ⨯ ./src/components/PhotographerLikes/PhotographerLikes.js:5:1
+Module not found: Can't resolve '../app/page.module.css'
+  3 | import { useState } from "react";
+  4 | import Gallery from "./Gallery"; // Ajuste le chemin
+> 5 | import styles from "../app/page.module.css";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  6 | import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+  7 | import { faHeart as faHeartSolid } from "@fortawesome/free-solid-svg-icons";
+  8 |
+
+
+
+Import trace:
+  Server Component:
+    ./src/components/PhotographerLikes/PhotographerLikes.js
+    ./src/app/photographes/[id]/page.js
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[01:15:27.253] Server  ERROR    ⨯ ./src/components/PhotographerLikes/PhotographerLikes.js:5:1
+Module not found: Can't resolve '../app/page.module.css'
+  3 | import { useState } from "react";
+  4 | import Gallery from "./Gallery"; // Ajuste le chemin
+> 5 | import styles from "../app/page.module.css";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  6 | import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+  7 | import { faHeart as faHeartSolid } from "@fortawesome/free-solid-svg-icons";
+  8 |
+
+
+
+Import trace:
+  Server Component:
+    ./src/components/PhotographerLikes/PhotographerLikes.js
+    ./src/app/photographes/[id]/page.js
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[01:15:27.254] Server  ERROR    ⨯ ./src/components/PhotographerLikes/PhotographerLikes.js:5:1
+Module not found: Can't resolve '../app/page.module.css'
+  3 | import { useState } from "react";
+  4 | import Gallery from "./Gallery"; // Ajuste le chemin
+> 5 | import styles from "../app/page.module.css";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  6 | import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+  7 | import { faHeart as faHeartSolid } from "@fortawesome/free-solid-svg-icons";
+  8 |
+
+
+
+Import trace:
+  Server Component:
+    ./src/components/PhotographerLikes/PhotographerLikes.js
+    ./src/app/photographes/[id]/page.js
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[01:15:27.255] Server  ERROR    ⨯ ./src/components/PhotographerLikes/PhotographerLikes.js:5:1
+Module not found: Can't resolve '../app/page.module.css'
+  3 | import { useState } from "react";
+  4 | import Gallery from "./Gallery"; // Ajuste le chemin
+> 5 | import styles from "../app/page.module.css";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  6 | import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+  7 | import { faHeart as faHeartSolid } from "@fortawesome/free-solid-svg-icons";
+  8 |
+
+
+
+Import trace:
+  Server Component:
+    ./src/components/PhotographerLikes/PhotographerLikes.js
+    ./src/app/photographes/[id]/page.js
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[01:15:27.257] Server  ERROR    ⨯ ./src/components/PhotographerLikes/PhotographerLikes.js:4:1
+Module not found: Can't resolve './Gallery'
+  2 |
+  3 | import { useState } from "react";
+> 4 | import Gallery from "./Gallery"; // Ajuste le chemin
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  5 | import styles from "../app/page.module.css";
+  6 | import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+  7 | import { faHeart as faHeartSolid } from "@fortawesome/free-solid-svg-icons";
+
+
+
+Import trace:
+  Server Component:
+    ./src/components/PhotographerLikes/PhotographerLikes.js
+    ./src/app/photographes/[id]/page.js
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[01:15:27.257] Server  ERROR    ⨯ ./src/components/PhotographerLikes/PhotographerLikes.js:4:1
+Module not found: Can't resolve './Gallery'
+  2 |
+  3 | import { useState } from "react";
+> 4 | import Gallery from "./Gallery"; // Ajuste le chemin
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  5 | import styles from "../app/page.module.css";
+  6 | import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+  7 | import { faHeart as faHeartSolid } from "@fortawesome/free-solid-svg-icons";
+
+
+
+Import trace:
+  Server Component:
+    ./src/components/PhotographerLikes/PhotographerLikes.js
+    ./src/app/photographes/[id]/page.js
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[01:15:27.258] Server  ERROR    ⨯ ./src/components/PhotographerLikes/PhotographerLikes.js:4:1
+Module not found: Can't resolve './Gallery'
+  2 |
+  3 | import { useState } from "react";
+> 4 | import Gallery from "./Gallery"; // Ajuste le chemin
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  5 | import styles from "../app/page.module.css";
+  6 | import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+  7 | import { faHeart as faHeartSolid } from "@fortawesome/free-solid-svg-icons";
+
+
+
+Import trace:
+  Server Component:
+    ./src/components/PhotographerLikes/PhotographerLikes.js
+    ./src/app/photographes/[id]/page.js
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[01:15:27.259] Server  ERROR    ⨯ ./src/components/PhotographerLikes/PhotographerLikes.js:4:1
+Module not found: Can't resolve './Gallery'
+  2 |
+  3 | import { useState } from "react";
+> 4 | import Gallery from "./Gallery"; // Ajuste le chemin
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  5 | import styles from "../app/page.module.css";
+  6 | import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+  7 | import { faHeart as faHeartSolid } from "@fortawesome/free-solid-svg-icons";
+
+
+
+Import trace:
+  Server Component:
+    ./src/components/PhotographerLikes/PhotographerLikes.js
+    ./src/app/photographes/[id]/page.js
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[01:15:28.004] Browser ERROR   ./src/components/PhotographerLikes/PhotographerLikes.js:5:1
+Module not found: Can't resolve '../app/page.module.css'
+  3 | import { useState } from "react";
+  4 | import Gallery from "./Gallery"; // Ajuste le chemin
+> 5 | import styles from "../app/page.module.css";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  6 | import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+  7 | import { faHeart as faHeartSolid } from "@fortawesome/free-solid-svg-icons";
+  8 |
+
+Import trace:
+  Server Component:
+    ./src/components/PhotographerLikes/PhotographerLikes.js
+    ./src/app/photographes/[id]/page.js
+
+https://nextjs.org/docs/messages/module-not-found
+[01:15:28.004] Browser ERROR   ./src/components/PhotographerLikes/PhotographerLikes.js:4:1
+Module not found: Can't resolve './Gallery'
+  2 |
+  3 | import { useState } from "react";
+> 4 | import Gallery from "./Gallery"; // Ajuste le chemin
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  5 | import styles from "../app/page.module.css";
+  6 | import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+  7 | import { faHeart as faHeartSolid } from "@fortawesome/free-solid-svg-icons";
+
+Import trace:
+  Server Component:
+    ./src/components/PhotographerLikes/PhotographerLikes.js
+    ./src/app/photographes/[id]/page.js
+
+https://nextjs.org/docs/messages/module-not-found
+[01:15:40.403] Server  ERROR    ⨯ ./src/components/PhotographerLikes/PhotographerLikes.js:5:1
+Module not found: Can't resolve '../app/page.module.css'
+  3 | import { useState } from "react";
+  4 | import Gallery from "./Gallery";
+> 5 | import styles from "../app/page.module.css";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  6 | import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+  7 | import { faHeart as faHeartSolid } from "@fortawesome/free-solid-svg-icons";
+  8 |
+
+
+
+Import trace:
+  Server Component:
+    ./src/components/PhotographerLikes/PhotographerLikes.js
+    ./src/app/photographes/[id]/page.js
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[01:15:40.404] Server  ERROR    ⨯ ./src/components/PhotographerLikes/PhotographerLikes.js:5:1
+Module not found: Can't resolve '../app/page.module.css'
+  3 | import { useState } from "react";
+  4 | import Gallery from "./Gallery";
+> 5 | import styles from "../app/page.module.css";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  6 | import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+  7 | import { faHeart as faHeartSolid } from "@fortawesome/free-solid-svg-icons";
+  8 |
+
+
+
+Import trace:
+  Server Component:
+    ./src/components/PhotographerLikes/PhotographerLikes.js
+    ./src/app/photographes/[id]/page.js
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[01:15:40.405] Server  ERROR    ⨯ ./src/components/PhotographerLikes/PhotographerLikes.js:5:1
+Module not found: Can't resolve '../app/page.module.css'
+  3 | import { useState } from "react";
+  4 | import Gallery from "./Gallery";
+> 5 | import styles from "../app/page.module.css";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  6 | import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+  7 | import { faHeart as faHeartSolid } from "@fortawesome/free-solid-svg-icons";
+  8 |
+
+
+
+Import trace:
+  Server Component:
+    ./src/components/PhotographerLikes/PhotographerLikes.js
+    ./src/app/photographes/[id]/page.js
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[01:15:40.406] Server  ERROR    ⨯ ./src/components/PhotographerLikes/PhotographerLikes.js:5:1
+Module not found: Can't resolve '../app/page.module.css'
+  3 | import { useState } from "react";
+  4 | import Gallery from "./Gallery";
+> 5 | import styles from "../app/page.module.css";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  6 | import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+  7 | import { faHeart as faHeartSolid } from "@fortawesome/free-solid-svg-icons";
+  8 |
+
+
+
+Import trace:
+  Server Component:
+    ./src/components/PhotographerLikes/PhotographerLikes.js
+    ./src/app/photographes/[id]/page.js
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[01:15:40.407] Server  ERROR    ⨯ ./src/components/PhotographerLikes/PhotographerLikes.js:4:1
+Module not found: Can't resolve './Gallery'
+  2 |
+  3 | import { useState } from "react";
+> 4 | import Gallery from "./Gallery";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  5 | import styles from "../app/page.module.css";
+  6 | import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+  7 | import { faHeart as faHeartSolid } from "@fortawesome/free-solid-svg-icons";
+
+
+
+Import trace:
+  Server Component:
+    ./src/components/PhotographerLikes/PhotographerLikes.js
+    ./src/app/photographes/[id]/page.js
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[01:15:40.408] Server  ERROR    ⨯ ./src/components/PhotographerLikes/PhotographerLikes.js:4:1
+Module not found: Can't resolve './Gallery'
+  2 |
+  3 | import { useState } from "react";
+> 4 | import Gallery from "./Gallery";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  5 | import styles from "../app/page.module.css";
+  6 | import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+  7 | import { faHeart as faHeartSolid } from "@fortawesome/free-solid-svg-icons";
+
+
+
+Import trace:
+  Server Component:
+    ./src/components/PhotographerLikes/PhotographerLikes.js
+    ./src/app/photographes/[id]/page.js
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[01:15:40.408] Server  ERROR    ⨯ ./src/components/PhotographerLikes/PhotographerLikes.js:4:1
+Module not found: Can't resolve './Gallery'
+  2 |
+  3 | import { useState } from "react";
+> 4 | import Gallery from "./Gallery";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  5 | import styles from "../app/page.module.css";
+  6 | import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+  7 | import { faHeart as faHeartSolid } from "@fortawesome/free-solid-svg-icons";
+
+
+
+Import trace:
+  Server Component:
+    ./src/components/PhotographerLikes/PhotographerLikes.js
+    ./src/app/photographes/[id]/page.js
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[01:15:40.409] Server  ERROR    ⨯ ./src/components/PhotographerLikes/PhotographerLikes.js:4:1
+Module not found: Can't resolve './Gallery'
+  2 |
+  3 | import { useState } from "react";
+> 4 | import Gallery from "./Gallery";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  5 | import styles from "../app/page.module.css";
+  6 | import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+  7 | import { faHeart as faHeartSolid } from "@fortawesome/free-solid-svg-icons";
+
+
+
+Import trace:
+  Server Component:
+    ./src/components/PhotographerLikes/PhotographerLikes.js
+    ./src/app/photographes/[id]/page.js
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[01:15:40.562] Browser ERROR   ./src/components/PhotographerLikes/PhotographerLikes.js:5:1
+Module not found: Can't resolve '../app/page.module.css'
+  3 | import { useState } from "react";
+  4 | import Gallery from "./Gallery";
+> 5 | import styles from "../app/page.module.css";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  6 | import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+  7 | import { faHeart as faHeartSolid } from "@fortawesome/free-solid-svg-icons";
+  8 |
+
+Import trace:
+  Server Component:
+    ./src/components/PhotographerLikes/PhotographerLikes.js
+    ./src/app/photographes/[id]/page.js
+
+https://nextjs.org/docs/messages/module-not-found
+[01:15:40.562] Browser ERROR   ./src/components/PhotographerLikes/PhotographerLikes.js:4:1
+Module not found: Can't resolve './Gallery'
+  2 |
+  3 | import { useState } from "react";
+> 4 | import Gallery from "./Gallery";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  5 | import styles from "../app/page.module.css";
+  6 | import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+  7 | import { faHeart as faHeartSolid } from "@fortawesome/free-solid-svg-icons";
+
+Import trace:
+  Server Component:
+    ./src/components/PhotographerLikes/PhotographerLikes.js
+    ./src/app/photographes/[id]/page.js
+
+https://nextjs.org/docs/messages/module-not-found
+[01:15:52.632] Server  ERROR    ⨯ ./src/components/PhotographerLikes/PhotographerLikes.js:4:1
+Module not found: Can't resolve './Gallery'
+  2 |
+  3 | import { useState } from "react";
+> 4 | import Gallery from "./Gallery";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  5 | import styles from "./PhotographerLikes/PhotographerLikes.module.css";
+  6 | import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+  7 | import { faHeart as faHeartSolid } from "@fortawesome/free-solid-svg-icons";
+
+
+
+Import trace:
+  Server Component:
+    ./src/components/PhotographerLikes/PhotographerLikes.js
+    ./src/app/photographes/[id]/page.js
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[01:15:52.633] Server  ERROR    ⨯ ./src/components/PhotographerLikes/PhotographerLikes.js:4:1
+Module not found: Can't resolve './Gallery'
+  2 |
+  3 | import { useState } from "react";
+> 4 | import Gallery from "./Gallery";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  5 | import styles from "./PhotographerLikes/PhotographerLikes.module.css";
+  6 | import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+  7 | import { faHeart as faHeartSolid } from "@fortawesome/free-solid-svg-icons";
+
+
+
+Import trace:
+  Server Component:
+    ./src/components/PhotographerLikes/PhotographerLikes.js
+    ./src/app/photographes/[id]/page.js
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[01:15:52.634] Server  ERROR    ⨯ ./src/components/PhotographerLikes/PhotographerLikes.js:4:1
+Module not found: Can't resolve './Gallery'
+  2 |
+  3 | import { useState } from "react";
+> 4 | import Gallery from "./Gallery";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  5 | import styles from "./PhotographerLikes/PhotographerLikes.module.css";
+  6 | import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+  7 | import { faHeart as faHeartSolid } from "@fortawesome/free-solid-svg-icons";
+
+
+
+Import trace:
+  Server Component:
+    ./src/components/PhotographerLikes/PhotographerLikes.js
+    ./src/app/photographes/[id]/page.js
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[01:15:52.635] Server  ERROR    ⨯ ./src/components/PhotographerLikes/PhotographerLikes.js:4:1
+Module not found: Can't resolve './Gallery'
+  2 |
+  3 | import { useState } from "react";
+> 4 | import Gallery from "./Gallery";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  5 | import styles from "./PhotographerLikes/PhotographerLikes.module.css";
+  6 | import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+  7 | import { faHeart as faHeartSolid } from "@fortawesome/free-solid-svg-icons";
+
+
+
+Import trace:
+  Server Component:
+    ./src/components/PhotographerLikes/PhotographerLikes.js
+    ./src/app/photographes/[id]/page.js
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[01:15:52.636] Server  ERROR    ⨯ ./src/components/PhotographerLikes/PhotographerLikes.js:5:1
+Module not found: Can't resolve './PhotographerLikes/PhotographerLikes.module.css'
+  3 | import { useState } from "react";
+  4 | import Gallery from "./Gallery";
+> 5 | import styles from "./PhotographerLikes/PhotographerLikes.module.css";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  6 | import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+  7 | import { faHeart as faHeartSolid } from "@fortawesome/free-solid-svg-icons";
+  8 |
+
+
+
+Import trace:
+  Server Component:
+    ./src/components/PhotographerLikes/PhotographerLikes.js
+    ./src/app/photographes/[id]/page.js
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[01:15:52.637] Server  ERROR    ⨯ ./src/components/PhotographerLikes/PhotographerLikes.js:5:1
+Module not found: Can't resolve './PhotographerLikes/PhotographerLikes.module.css'
+  3 | import { useState } from "react";
+  4 | import Gallery from "./Gallery";
+> 5 | import styles from "./PhotographerLikes/PhotographerLikes.module.css";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  6 | import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+  7 | import { faHeart as faHeartSolid } from "@fortawesome/free-solid-svg-icons";
+  8 |
+
+
+
+Import trace:
+  Server Component:
+    ./src/components/PhotographerLikes/PhotographerLikes.js
+    ./src/app/photographes/[id]/page.js
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[01:15:52.638] Server  ERROR    ⨯ ./src/components/PhotographerLikes/PhotographerLikes.js:5:1
+Module not found: Can't resolve './PhotographerLikes/PhotographerLikes.module.css'
+  3 | import { useState } from "react";
+  4 | import Gallery from "./Gallery";
+> 5 | import styles from "./PhotographerLikes/PhotographerLikes.module.css";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  6 | import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+  7 | import { faHeart as faHeartSolid } from "@fortawesome/free-solid-svg-icons";
+  8 |
+
+
+
+Import trace:
+  Server Component:
+    ./src/components/PhotographerLikes/PhotographerLikes.js
+    ./src/app/photographes/[id]/page.js
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[01:15:52.639] Server  ERROR    ⨯ ./src/components/PhotographerLikes/PhotographerLikes.js:5:1
+Module not found: Can't resolve './PhotographerLikes/PhotographerLikes.module.css'
+  3 | import { useState } from "react";
+  4 | import Gallery from "./Gallery";
+> 5 | import styles from "./PhotographerLikes/PhotographerLikes.module.css";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  6 | import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+  7 | import { faHeart as faHeartSolid } from "@fortawesome/free-solid-svg-icons";
+  8 |
+
+
+
+Import trace:
+  Server Component:
+    ./src/components/PhotographerLikes/PhotographerLikes.js
+    ./src/app/photographes/[id]/page.js
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[01:15:52.778] Browser ERROR   ./src/components/PhotographerLikes/PhotographerLikes.js:4:1
+Module not found: Can't resolve './Gallery'
+  2 |
+  3 | import { useState } from "react";
+> 4 | import Gallery from "./Gallery";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  5 | import styles from "./PhotographerLikes/PhotographerLikes.module.css";
+  6 | import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+  7 | import { faHeart as faHeartSolid } from "@fortawesome/free-solid-svg-icons";
+
+Import trace:
+  Server Component:
+    ./src/components/PhotographerLikes/PhotographerLikes.js
+    ./src/app/photographes/[id]/page.js
+
+https://nextjs.org/docs/messages/module-not-found
+[01:15:52.778] Browser ERROR   ./src/components/PhotographerLikes/PhotographerLikes.js:5:1
+Module not found: Can't resolve './PhotographerLikes/PhotographerLikes.module.css'
+  3 | import { useState } from "react";
+  4 | import Gallery from "./Gallery";
+> 5 | import styles from "./PhotographerLikes/PhotographerLikes.module.css";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  6 | import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+  7 | import { faHeart as faHeartSolid } from "@fortawesome/free-solid-svg-icons";
+  8 |
+
+Import trace:
+  Server Component:
+    ./src/components/PhotographerLikes/PhotographerLikes.js
+    ./src/app/photographes/[id]/page.js
+
+https://nextjs.org/docs/messages/module-not-found
+[01:16:13.787] Server  ERROR    ⨯ ./src/components/PhotographerLikes/PhotographerLikes.js:5:1
+Module not found: Can't resolve './PhotographerLikes/PhotographerLikes.module.css'
+  3 | import { useState } from "react";
+  4 | import Gallery from "../Gallery/Gallery";
+> 5 | import styles from "./PhotographerLikes/PhotographerLikes.module.css";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  6 | import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+  7 | import { faHeart as faHeartSolid } from "@fortawesome/free-solid-svg-icons";
+  8 |
+
+
+
+Import trace:
+  Server Component:
+    ./src/components/PhotographerLikes/PhotographerLikes.js
+    ./src/app/photographes/[id]/page.js
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[01:16:13.788] Server  ERROR    ⨯ ./src/components/PhotographerLikes/PhotographerLikes.js:5:1
+Module not found: Can't resolve './PhotographerLikes/PhotographerLikes.module.css'
+  3 | import { useState } from "react";
+  4 | import Gallery from "../Gallery/Gallery";
+> 5 | import styles from "./PhotographerLikes/PhotographerLikes.module.css";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  6 | import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+  7 | import { faHeart as faHeartSolid } from "@fortawesome/free-solid-svg-icons";
+  8 |
+
+
+
+Import trace:
+  Server Component:
+    ./src/components/PhotographerLikes/PhotographerLikes.js
+    ./src/app/photographes/[id]/page.js
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[01:16:13.789] Server  ERROR    ⨯ ./src/components/PhotographerLikes/PhotographerLikes.js:5:1
+Module not found: Can't resolve './PhotographerLikes/PhotographerLikes.module.css'
+  3 | import { useState } from "react";
+  4 | import Gallery from "../Gallery/Gallery";
+> 5 | import styles from "./PhotographerLikes/PhotographerLikes.module.css";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  6 | import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+  7 | import { faHeart as faHeartSolid } from "@fortawesome/free-solid-svg-icons";
+  8 |
+
+
+
+Import trace:
+  Server Component:
+    ./src/components/PhotographerLikes/PhotographerLikes.js
+    ./src/app/photographes/[id]/page.js
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[01:16:13.790] Server  ERROR    ⨯ ./src/components/PhotographerLikes/PhotographerLikes.js:5:1
+Module not found: Can't resolve './PhotographerLikes/PhotographerLikes.module.css'
+  3 | import { useState } from "react";
+  4 | import Gallery from "../Gallery/Gallery";
+> 5 | import styles from "./PhotographerLikes/PhotographerLikes.module.css";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  6 | import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+  7 | import { faHeart as faHeartSolid } from "@fortawesome/free-solid-svg-icons";
+  8 |
+
+
+
+Import trace:
+  Server Component:
+    ./src/components/PhotographerLikes/PhotographerLikes.js
+    ./src/app/photographes/[id]/page.js
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[01:16:13.939] Browser ERROR   ./src/components/PhotographerLikes/PhotographerLikes.js:5:1
+Module not found: Can't resolve './PhotographerLikes/PhotographerLikes.module.css'
+  3 | import { useState } from "react";
+  4 | import Gallery from "../Gallery/Gallery";
+> 5 | import styles from "./PhotographerLikes/PhotographerLikes.module.css";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  6 | import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+  7 | import { faHeart as faHeartSolid } from "@fortawesome/free-solid-svg-icons";
+  8 |
+
+Import trace:
+  Server Component:
+    ./src/components/PhotographerLikes/PhotographerLikes.js
+    ./src/app/photographes/[id]/page.js
+
+https://nextjs.org/docs/messages/module-not-found
+[01:16:44.724] Server  ERROR    ⨯ ./src/components/PhotographerLikes/PhotographerLikes.js:5:1
+Module not found: Can't resolve './PhotographerLikes/PhotographerLikes.module.css'
+  3 | import { useState } from "react";
+  4 | import Gallery from "../Gallery/Gallery";
+> 5 | import styles from "./PhotographerLikes/PhotographerLikes.module.css";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  6 | import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+  7 | import { faHeart as faHeartSolid } from "@fortawesome/free-solid-svg-icons";
+  8 |
+
+
+
+Import trace:
+  Server Component:
+    ./src/components/PhotographerLikes/PhotographerLikes.js
+    ./src/app/photographes/[id]/page.js
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[01:16:44.725] Server  ERROR    ⨯ ./src/components/PhotographerLikes/PhotographerLikes.js:5:1
+Module not found: Can't resolve './PhotographerLikes/PhotographerLikes.module.css'
+  3 | import { useState } from "react";
+  4 | import Gallery from "../Gallery/Gallery";
+> 5 | import styles from "./PhotographerLikes/PhotographerLikes.module.css";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  6 | import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+  7 | import { faHeart as faHeartSolid } from "@fortawesome/free-solid-svg-icons";
+  8 |
+
+
+
+Import trace:
+  Server Component:
+    ./src/components/PhotographerLikes/PhotographerLikes.js
+    ./src/app/photographes/[id]/page.js
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[01:16:44.726] Server  ERROR    ⨯ ./src/components/PhotographerLikes/PhotographerLikes.js:5:1
+Module not found: Can't resolve './PhotographerLikes/PhotographerLikes.module.css'
+  3 | import { useState } from "react";
+  4 | import Gallery from "../Gallery/Gallery";
+> 5 | import styles from "./PhotographerLikes/PhotographerLikes.module.css";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  6 | import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+  7 | import { faHeart as faHeartSolid } from "@fortawesome/free-solid-svg-icons";
+  8 |
+
+
+
+Import trace:
+  Server Component:
+    ./src/components/PhotographerLikes/PhotographerLikes.js
+    ./src/app/photographes/[id]/page.js
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[01:16:44.727] Server  ERROR    ⨯ ./src/components/PhotographerLikes/PhotographerLikes.js:5:1
+Module not found: Can't resolve './PhotographerLikes/PhotographerLikes.module.css'
+  3 | import { useState } from "react";
+  4 | import Gallery from "../Gallery/Gallery";
+> 5 | import styles from "./PhotographerLikes/PhotographerLikes.module.css";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  6 | import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+  7 | import { faHeart as faHeartSolid } from "@fortawesome/free-solid-svg-icons";
+  8 |
+
+
+
+Import trace:
+  Server Component:
+    ./src/components/PhotographerLikes/PhotographerLikes.js
+    ./src/app/photographes/[id]/page.js
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[01:16:44.871] Browser ERROR   ./src/components/PhotographerLikes/PhotographerLikes.js:5:1
+Module not found: Can't resolve './PhotographerLikes/PhotographerLikes.module.css'
+  3 | import { useState } from "react";
+  4 | import Gallery from "../Gallery/Gallery";
+> 5 | import styles from "./PhotographerLikes/PhotographerLikes.module.css";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  6 | import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+  7 | import { faHeart as faHeartSolid } from "@fortawesome/free-solid-svg-icons";
+  8 |
+
+Import trace:
+  Server Component:
+    ./src/components/PhotographerLikes/PhotographerLikes.js
+    ./src/app/photographes/[id]/page.js
+
+https://nextjs.org/docs/messages/module-not-found
+[01:16:48.139] Browser ERROR   ./src/components/PhotographerLikes/PhotographerLikes.js:5:1
+Module not found: Can't resolve './PhotographerLikes/PhotographerLikes.module.css'
+  3 | import { useState } from "react";
+  4 | import Gallery from "../Gallery/Gallery";
+> 5 | import styles from "./PhotographerLikes/PhotographerLikes.module.css";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  6 | import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+  7 | import { faHeart as faHeartSolid } from "@fortawesome/free-solid-svg-icons";
+  8 |
+
+Import trace:
+  Server Component:
+    ./src/components/PhotographerLikes/PhotographerLikes.js
+    ./src/app/photographes/[id]/page.js
+
+https://nextjs.org/docs/messages/module-not-found
+[01:17:12.619] Server  ERROR    ⨯ ./src/components/PhotographerLikes/PhotographerLikes.js:5:1
+Module not found: Can't resolve './PhotographerLikes/PhotographerLikes.module.css'
+  3 | import { useState } from "react";
+  4 | import Gallery from "../Gallery/Gallery";
+> 5 | import styles from "./PhotographerLikes/PhotographerLikes.module.css";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  6 | import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+  7 | import { faHeart as faHeartSolid } from "@fortawesome/free-solid-svg-icons";
+  8 |
+
+
+
+Import trace:
+  Server Component:
+    ./src/components/PhotographerLikes/PhotographerLikes.js
+    ./src/components/index.js
+    ./src/app/photographes/[id]/page.js
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[01:17:12.621] Server  ERROR    ⨯ ./src/components/PhotographerLikes/PhotographerLikes.js:5:1
+Module not found: Can't resolve './PhotographerLikes/PhotographerLikes.module.css'
+  3 | import { useState } from "react";
+  4 | import Gallery from "../Gallery/Gallery";
+> 5 | import styles from "./PhotographerLikes/PhotographerLikes.module.css";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  6 | import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+  7 | import { faHeart as faHeartSolid } from "@fortawesome/free-solid-svg-icons";
+  8 |
+
+
+
+Import trace:
+  Server Component:
+    ./src/components/PhotographerLikes/PhotographerLikes.js
+    ./src/components/index.js
+    ./src/app/photographes/[id]/page.js
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[01:17:12.621] Server  ERROR    ⨯ ./src/components/PhotographerLikes/PhotographerLikes.js:5:1
+Module not found: Can't resolve './PhotographerLikes/PhotographerLikes.module.css'
+  3 | import { useState } from "react";
+  4 | import Gallery from "../Gallery/Gallery";
+> 5 | import styles from "./PhotographerLikes/PhotographerLikes.module.css";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  6 | import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+  7 | import { faHeart as faHeartSolid } from "@fortawesome/free-solid-svg-icons";
+  8 |
+
+
+
+Import trace:
+  Server Component:
+    ./src/components/PhotographerLikes/PhotographerLikes.js
+    ./src/components/index.js
+    ./src/app/photographes/[id]/page.js
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[01:17:12.622] Server  ERROR    ⨯ ./src/components/PhotographerLikes/PhotographerLikes.js:5:1
+Module not found: Can't resolve './PhotographerLikes/PhotographerLikes.module.css'
+  3 | import { useState } from "react";
+  4 | import Gallery from "../Gallery/Gallery";
+> 5 | import styles from "./PhotographerLikes/PhotographerLikes.module.css";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  6 | import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+  7 | import { faHeart as faHeartSolid } from "@fortawesome/free-solid-svg-icons";
+  8 |
+
+
+
+Import trace:
+  Server Component:
+    ./src/components/PhotographerLikes/PhotographerLikes.js
+    ./src/components/index.js
+    ./src/app/photographes/[id]/page.js
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[01:17:13.005] Browser ERROR   ./src/components/PhotographerLikes/PhotographerLikes.js:5:1
+Module not found: Can't resolve './PhotographerLikes/PhotographerLikes.module.css'
+  3 | import { useState } from "react";
+  4 | import Gallery from "../Gallery/Gallery";
+> 5 | import styles from "./PhotographerLikes/PhotographerLikes.module.css";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  6 | import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+  7 | import { faHeart as faHeartSolid } from "@fortawesome/free-solid-svg-icons";
+  8 |
+
+Import trace:
+  Server Component:
+    ./src/components/PhotographerLikes/PhotographerLikes.js
+    ./src/components/index.js
+    ./src/app/photographes/[id]/page.js
+
+https://nextjs.org/docs/messages/module-not-found
+[01:17:22.939] Server  ERROR    ⨯ ./src/components/PhotographerLikes/PhotographerLikes.js:5:1
+Module not found: Can't resolve './PhotographerLikes/PhotographerLikes.module.css'
+  3 | import { useState } from "react";
+  4 | import Gallery from "../Gallery/Gallery";
+> 5 | import styles from "./PhotographerLikes/PhotographerLikes.module.css";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  6 | import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+  7 | import { faHeart as faHeartSolid } from "@fortawesome/free-solid-svg-icons";
+  8 |
+
+
+
+Import trace:
+  Server Component:
+    ./src/components/PhotographerLikes/PhotographerLikes.js
+    ./src/components/index.js
+    ./src/app/photographes/[id]/page.js
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[01:17:22.940] Server  ERROR    ⨯ ./src/components/PhotographerLikes/PhotographerLikes.js:5:1
+Module not found: Can't resolve './PhotographerLikes/PhotographerLikes.module.css'
+  3 | import { useState } from "react";
+  4 | import Gallery from "../Gallery/Gallery";
+> 5 | import styles from "./PhotographerLikes/PhotographerLikes.module.css";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  6 | import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+  7 | import { faHeart as faHeartSolid } from "@fortawesome/free-solid-svg-icons";
+  8 |
+
+
+
+Import trace:
+  Server Component:
+    ./src/components/PhotographerLikes/PhotographerLikes.js
+    ./src/components/index.js
+    ./src/app/photographes/[id]/page.js
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[01:17:22.941] Server  ERROR    ⨯ ./src/components/PhotographerLikes/PhotographerLikes.js:5:1
+Module not found: Can't resolve './PhotographerLikes/PhotographerLikes.module.css'
+  3 | import { useState } from "react";
+  4 | import Gallery from "../Gallery/Gallery";
+> 5 | import styles from "./PhotographerLikes/PhotographerLikes.module.css";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  6 | import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+  7 | import { faHeart as faHeartSolid } from "@fortawesome/free-solid-svg-icons";
+  8 |
+
+
+
+Import trace:
+  Server Component:
+    ./src/components/PhotographerLikes/PhotographerLikes.js
+    ./src/components/index.js
+    ./src/app/photographes/[id]/page.js
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[01:17:22.941] Server  ERROR    ⨯ ./src/components/PhotographerLikes/PhotographerLikes.js:5:1
+Module not found: Can't resolve './PhotographerLikes/PhotographerLikes.module.css'
+  3 | import { useState } from "react";
+  4 | import Gallery from "../Gallery/Gallery";
+> 5 | import styles from "./PhotographerLikes/PhotographerLikes.module.css";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  6 | import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+  7 | import { faHeart as faHeartSolid } from "@fortawesome/free-solid-svg-icons";
+  8 |
+
+
+
+Import trace:
+  Server Component:
+    ./src/components/PhotographerLikes/PhotographerLikes.js
+    ./src/components/index.js
+    ./src/app/photographes/[id]/page.js
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[01:17:23.959] Browser ERROR   ./src/components/PhotographerLikes/PhotographerLikes.js:5:1
+Module not found: Can't resolve './PhotographerLikes/PhotographerLikes.module.css'
+  3 | import { useState } from "react";
+  4 | import Gallery from "../Gallery/Gallery";
+> 5 | import styles from "./PhotographerLikes/PhotographerLikes.module.css";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  6 | import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+  7 | import { faHeart as faHeartSolid } from "@fortawesome/free-solid-svg-icons";
+  8 |
+
+Import trace:
+  Server Component:
+    ./src/components/PhotographerLikes/PhotographerLikes.js
+    ./src/components/index.js
+    ./src/app/photographes/[id]/page.js
+
+https://nextjs.org/docs/messages/module-not-found
+[01:17:45.996] Browser ERROR   ./src/components/PhotographerLikes/PhotographerLikes.js:5:1
+Module not found: Can't resolve './PhotographerLikes/PhotographerLikes.module.css'
+  3 | import { useState } from "react";
+  4 | import Gallery from "../Gallery/Gallery";
+> 5 | import styles from "./PhotographerLikes/PhotographerLikes.module.css";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  6 | import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+  7 | import { faHeart as faHeartSolid } from "@fortawesome/free-solid-svg-icons";
+  8 |
+
+Import trace:
+  Server Component:
+    ./src/components/PhotographerLikes/PhotographerLikes.js
+    ./src/components/index.js
+    ./src/app/photographes/[id]/page.js
+
+https://nextjs.org/docs/messages/module-not-found
+[01:19:09.784] Server  ERROR    ⨯ ./src/components/PhotographerLikes/PhotographerLikes.js:5:1
+Module not found: Can't resolve './PhotographerLikes/PhotographerLikes.module.css'
+  3 | import { useState } from "react";
+  4 | import Gallery from "../Gallery/Gallery";
+> 5 | import styles from "./PhotographerLikes/PhotographerLikes.module.css";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  6 | import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+  7 | import { faHeart as faHeartSolid } from "@fortawesome/free-solid-svg-icons";
+  8 |
+
+
+
+Import trace:
+  Server Component:
+    ./src/components/PhotographerLikes/PhotographerLikes.js
+    ./src/components/index.js
+    ./src/app/photographes/[id]/page.js
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[01:19:09.785] Server  ERROR    ⨯ ./src/components/PhotographerLikes/PhotographerLikes.js:5:1
+Module not found: Can't resolve './PhotographerLikes/PhotographerLikes.module.css'
+  3 | import { useState } from "react";
+  4 | import Gallery from "../Gallery/Gallery";
+> 5 | import styles from "./PhotographerLikes/PhotographerLikes.module.css";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  6 | import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+  7 | import { faHeart as faHeartSolid } from "@fortawesome/free-solid-svg-icons";
+  8 |
+
+
+
+Import trace:
+  Server Component:
+    ./src/components/PhotographerLikes/PhotographerLikes.js
+    ./src/components/index.js
+    ./src/app/photographes/[id]/page.js
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[01:19:09.786] Server  ERROR    ⨯ ./src/components/PhotographerLikes/PhotographerLikes.js:5:1
+Module not found: Can't resolve './PhotographerLikes/PhotographerLikes.module.css'
+  3 | import { useState } from "react";
+  4 | import Gallery from "../Gallery/Gallery";
+> 5 | import styles from "./PhotographerLikes/PhotographerLikes.module.css";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  6 | import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+  7 | import { faHeart as faHeartSolid } from "@fortawesome/free-solid-svg-icons";
+  8 |
+
+
+
+Import trace:
+  Server Component:
+    ./src/components/PhotographerLikes/PhotographerLikes.js
+    ./src/components/index.js
+    ./src/app/photographes/[id]/page.js
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[01:19:09.787] Server  ERROR    ⨯ ./src/components/PhotographerLikes/PhotographerLikes.js:5:1
+Module not found: Can't resolve './PhotographerLikes/PhotographerLikes.module.css'
+  3 | import { useState } from "react";
+  4 | import Gallery from "../Gallery/Gallery";
+> 5 | import styles from "./PhotographerLikes/PhotographerLikes.module.css";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  6 | import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+  7 | import { faHeart as faHeartSolid } from "@fortawesome/free-solid-svg-icons";
+  8 |
+
+
+
+Import trace:
+  Server Component:
+    ./src/components/PhotographerLikes/PhotographerLikes.js
+    ./src/components/index.js
+    ./src/app/photographes/[id]/page.js
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[01:19:09.999] Browser ERROR   ./src/components/PhotographerLikes/PhotographerLikes.js:5:1
+Module not found: Can't resolve './PhotographerLikes/PhotographerLikes.module.css'
+  3 | import { useState } from "react";
+  4 | import Gallery from "../Gallery/Gallery";
+> 5 | import styles from "./PhotographerLikes/PhotographerLikes.module.css";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  6 | import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+  7 | import { faHeart as faHeartSolid } from "@fortawesome/free-solid-svg-icons";
+  8 |
+
+Import trace:
+  Server Component:
+    ./src/components/PhotographerLikes/PhotographerLikes.js
+    ./src/components/index.js
+    ./src/app/photographes/[id]/page.js
+
+https://nextjs.org/docs/messages/module-not-found
+[01:21:44.795] Server  LOG      ✓ Compiled in 11ms
+[01:21:45.535] Server  ERROR   C:\Users\Salomé\Desktop\Projets Openclassrooms\projet4\React-P5-fisheye-main\.next\dev\server\chunks\ssr\[root-of-the-server]__46d61b3f._.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[01:21:45.536] Server  ERROR    ⨯ ReferenceError: PhotographerContent is not defined
+[01:21:45.752] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[01:21:45.883] Browser ERROR   uncaughtError: ReferenceError: PhotographerContent is not defined
+[01:21:55.359] Server  LOG      ✓ Compiled in 9ms
+[01:21:55.841] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[01:22:45.652] Server  LOG      ✓ Compiled in 9ms
+[01:22:46.001] Browser ERROR   ./src/components/Gallery/Gallery.js:80:9
+Ecmascript file had an error
+  78 |   });
+  79 |
+> 80 |   const handleLike = (e, mediaId) => {
+     |         ^^^^^^^^^^
+  81 |     const isLiked = !media.isLiked;
+  82 |     if (onLikeChange) onLikeChange(isLiked ? 1 : -1);
+  83 |   }
+
+the name `handleLike` is defined multiple times
+
+Import trace:
+  Server Component:
+    ./src/components/Gallery/Gallery.js
+    ./src/components/index.js
+    ./src/app/photographes/[id]/page.js
+[01:23:22.313] Server  LOG      ✓ Compiled in 7ms
+[01:23:26.754] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[01:23:28.068] Browser ERROR   uncaughtError: ReferenceError: media is not defined
+[01:23:28.438] Browser ERROR   uncaughtError: ReferenceError: media is not defined
+[01:23:28.612] Browser ERROR   uncaughtError: ReferenceError: media is not defined
+[01:23:28.773] Browser ERROR   uncaughtError: ReferenceError: media is not defined
+[01:23:28.940] Browser ERROR   uncaughtError: ReferenceError: media is not defined
+[01:23:29.084] Browser ERROR   uncaughtError: ReferenceError: media is not defined
+[01:23:29.355] Browser ERROR   uncaughtError: ReferenceError: media is not defined
+[01:23:29.926] Browser ERROR   uncaughtError: ReferenceError: media is not defined
+[01:24:18.951] Server  LOG      ✓ Compiled in 7ms
+[01:24:20.483] Browser ERROR   Cannot update a component (`%s`) while rendering a different component (`%s`). To locate the bad setState() call inside `%s`, follow the stack trace as described in https://react.dev/link/setstate-in-render PhotographerContent Gallery Gallery
+[01:25:06.612] Server  LOG      ✓ Compiled in 6ms
+[01:25:08.817] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
