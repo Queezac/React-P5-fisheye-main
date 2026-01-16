@@ -1,7 +1,7 @@
 import { notFound } from "next/navigation";
 import Image from "next/image";
 import { getPhotographerWithLikes, getAllMediasForPhotographer } from "../../lib/prisma-db.js";
-import { Gallery, Header, ContactForm, PhotographerLikes } from "../../../components";
+import { Header, ContactForm, Gallery } from "../../../components";
 import styles from '../../page.module.css';
 
 export const metadata = {
@@ -49,8 +49,7 @@ export default async function PhotographerPage({ params }) {
             </div>
           </section>
         </div>
-
-        <PhotographerLikes photographer={photographer} medias={medias} />
+        <Gallery medias={medias} photographer={photographer} />
       </main>
     </div>
   );

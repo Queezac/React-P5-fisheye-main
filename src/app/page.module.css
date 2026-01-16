@@ -42,17 +42,20 @@
 }
 
 .portrait {
-  width: 200px;
+  width: 373px;
   height: 200px;
   position: relative;
-  border-radius: 50%;
   overflow: hidden;
 }
 
 .photoWrapper {
-  width: 100%;
+  width: 200px;
   height: 100%;
-  border-radius: 50%;
   overflow: hidden;
   position: relative;
+  margin-left: auto;
+}
+
+.photoWrapper img {
+  border-radius: 50%;
 }

@@ -43,19 +43,22 @@
 }
 
 .page-module___8aEwW__portrait {
-  border-radius: 50%;
-  width: 200px;
+  width: 373px;
   height: 200px;
   position: relative;
   overflow: hidden;
 }
 
 .page-module___8aEwW__photoWrapper {
-  border-radius: 50%;
-  width: 100%;
+  width: 200px;
   height: 100%;
+  margin-left: auto;
   position: relative;
   overflow: hidden;
+}
+
+.page-module___8aEwW__photoWrapper img {
+  border-radius: 50%;
 }
 
 /*# sourceMappingURL=src_app_page_module_css_bad6b30c._.single.css.map*/

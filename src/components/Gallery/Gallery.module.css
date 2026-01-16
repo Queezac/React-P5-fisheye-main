@@ -243,3 +243,24 @@
   cursor: pointer;
   flex-shrink: 0;
 }
+
+
+
+
+
+.photographerCardBottom {
+  position: fixed;
+  bottom: 0;
+  right: 40px;
+  width: 300px;
+  font-size: 24px;
+  background-color: #DB8876;
+  color: #000000;
+  border-radius: 5px 5px 0 0;
+  padding: 0 50px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 999;
+}

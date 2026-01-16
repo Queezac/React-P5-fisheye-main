@@ -1,0 +1,444 @@
+/* [project]/src/components/Gallery/Gallery.module.css [app-client] (css) */
+.Gallery-module__Sa_FLW__gallery {
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: space-between;
+  gap: 30px 100px;
+  margin-top: 30px;
+  padding: 0 100px;
+  display: grid;
+}
+
+.Gallery-module__Sa_FLW__mediaCard {
+  cursor: pointer;
+  flex-direction: column;
+  align-items: flex-start;
+  display: flex;
+}
+
+.Gallery-module__Sa_FLW__mediaCard img, .Gallery-module__Sa_FLW__mediaCard video {
+  object-fit: cover;
+  border-radius: 5px;
+  width: 100%;
+  height: 300px;
+}
+
+.Gallery-module__Sa_FLW__mediaInfo {
+  color: #901c1c;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  font-size: 20px;
+  display: flex;
+}
+
+.Gallery-module__Sa_FLW__mediaTitle {
+  font-size: 24px;
+  font-weight: 400;
+}
+
+.Gallery-module__Sa_FLW__likesContainer {
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.Gallery-module__Sa_FLW__likeButton {
+  cursor: pointer;
+  background: none;
+  border: none;
+  gap: 5px;
+  font-size: 20px;
+}
+
+.Gallery-module__Sa_FLW__sortContainer {
+  flex-direction: row;
+  align-items: center;
+  gap: 30px;
+  padding: 20px 0 20px 100px;
+  display: flex;
+}
+
+.Gallery-module__Sa_FLW__sortContainer select {
+  color: #fff;
+  cursor: pointer;
+  background-color: #901c1c;
+  border: none;
+  border-radius: 5px;
+  padding: 15px;
+}
+
+.Gallery-module__Sa_FLW__sortWrapper {
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 30px;
+  padding: 0 100px 20px;
+  display: flex;
+}
+
+.Gallery-module__Sa_FLW__sortLabel {
+  color: #000;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.Gallery-module__Sa_FLW__customSelect {
+  z-index: 999;
+  width: 170px;
+  position: relative;
+}
+
+.Gallery-module__Sa_FLW__selectTrigger {
+  color: #fff;
+  cursor: pointer;
+  background-color: #901c1c;
+  border: none;
+  border-radius: 5px;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 15px;
+  font-size: 16px;
+  font-weight: bold;
+  display: flex;
+}
+
+.Gallery-module__Sa_FLW__selectTrigger[aria-expanded="true"] {
+  border-radius: 5px 5px 0 0;
+}
+
+.Gallery-module__Sa_FLW__selectMenu {
+  background-color: #901c1c;
+  border-radius: 0 0 5px 5px;
+  display: block;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+}
+
+.Gallery-module__Sa_FLW__selectOption {
+  color: #fff;
+  cursor: pointer;
+  padding: 15px;
+  font-weight: bold;
+  position: relative;
+}
+
+.Gallery-module__Sa_FLW__selectOption:after {
+  content: "";
+  background-color: #fff;
+  height: 1px;
+  position: absolute;
+  top: 0;
+  left: 10px;
+  right: 10px;
+}
+
+.Gallery-module__Sa_FLW__selectOption:before {
+  content: "";
+  background-color: #fff;
+  height: 1px;
+  position: absolute;
+  top: 0;
+  left: 15px;
+  right: 15px;
+}
+
+.Gallery-module__Sa_FLW__selectOption:first-child:before {
+  display: none;
+}
+
+.Gallery-module__Sa_FLW__selectOption:hover {
+  background-color: #a52626;
+}
+
+.Gallery-module__Sa_FLW__arrow {
+  border: 2px solid #fff;
+  border-width: 0 2px 2px 0;
+  padding: 3px;
+  transition: transform .3s;
+  display: inline-block;
+}
+
+.Gallery-module__Sa_FLW__down {
+  margin-bottom: 2px;
+  transform: rotate(45deg);
+}
+
+.Gallery-module__Sa_FLW__up {
+  margin-top: 4px;
+  transform: rotate(-135deg);
+}
+
+.Gallery-module__Sa_FLW__modalOverlay {
+  z-index: 1000;
+  background: #c4c4c466;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  position: fixed;
+  inset: 0;
+}
+
+.Gallery-module__Sa_FLW__modal {
+  background: #fff;
+  border-radius: 5px;
+  justify-content: center;
+  align-items: center;
+  width: 65vw;
+  height: 90vh;
+  padding: 20px;
+  display: flex;
+}
+
+.Gallery-module__Sa_FLW__contentScaler {
+  flex-direction: row;
+  align-items: center;
+  display: flex;
+}
+
+.Gallery-module__Sa_FLW__modalImg {
+  object-fit: cover;
+  object-position: center;
+  width: 50vw;
+  height: 85vh;
+  display: block;
+}
+
+.Gallery-module__Sa_FLW__sideColumn {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 60px;
+  height: 90vh;
+  display: flex;
+  position: relative;
+}
+
+.Gallery-module__Sa_FLW__closeButton {
+  color: #901c1c;
+  cursor: pointer;
+  background: none;
+  border: none;
+  font-size: 40px;
+  line-height: 1;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.Gallery-module__Sa_FLW__modalTitle {
+  color: #901c1c;
+  margin: 15px 0 0;
+  font-size: 24px;
+  font-weight: 400;
+}
+
+.Gallery-module__Sa_FLW__navButton {
+  color: #901c1c;
+  cursor: pointer;
+  background: none;
+  border: none;
+  flex-shrink: 0;
+  font-size: 3rem;
+}
+
+.Gallery-module__Sa_FLW__photographerCardBottom {
+  color: #000;
+  z-index: 999;
+  background-color: #db8876;
+  border-radius: 5px 5px 0 0;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 300px;
+  padding: 0 50px;
+  font-size: 24px;
+  display: flex;
+  position: fixed;
+  bottom: 0;
+  right: 40px;
+}
+
+/* [project]/src/components/PhotographerLikes/PhotographerLikes.module.css [app-client] (css) */
+.PhotographerLikes-module__3wZUXq__photographerCardBottom {
+  color: #000;
+  z-index: 999;
+  background-color: #db8876;
+  border-radius: 5px 5px 0 0;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 300px;
+  padding: 0 50px;
+  font-size: 24px;
+  display: flex;
+  position: fixed;
+  bottom: 0;
+  right: 40px;
+}
+
+/* [project]/src/components/ContactForm/ContactForm.module.css [app-client] (css) */
+.ContactForm-module__fw3Taq__contactForm {
+  color: #fff;
+  cursor: pointer;
+  background-color: #901c1c;
+  border: none;
+  border-radius: 5px;
+  padding: 20px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.ContactForm-module__fw3Taq__modalOverlay {
+  z-index: 1000;
+  background: #c4c4c466;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+.ContactForm-module__fw3Taq__modal {
+  background: #db8876;
+  border-radius: 5px;
+  width: 550px;
+  max-width: 95%;
+  padding: 35px;
+  position: relative;
+  box-shadow: 0 5px 15px #0003;
+}
+
+.ContactForm-module__fw3Taq__modal h2 {
+  color: #000;
+  margin: 0;
+  font-size: 44px;
+  font-weight: 400;
+  line-height: 1.1;
+}
+
+.ContactForm-module__fw3Taq__closeButton {
+  cursor: pointer;
+  color: #fff;
+  background: none;
+  border: none;
+  font-size: 50px;
+  line-height: 1;
+  position: absolute;
+  top: 25px;
+  right: 25px;
+}
+
+.ContactForm-module__fw3Taq__form {
+  flex-direction: column;
+  margin-top: 20px;
+  display: flex;
+}
+
+.ContactForm-module__fw3Taq__form label {
+  color: #313131;
+  margin-bottom: 5px;
+  font-size: 26px;
+}
+
+.ContactForm-module__fw3Taq__form input {
+  border: none;
+  border-radius: 5px;
+  height: 50px;
+  margin-bottom: 15px;
+  padding: 0 15px;
+  font-size: 18px;
+}
+
+.ContactForm-module__fw3Taq__form textarea {
+  resize: none;
+  border: none;
+  border-radius: 5px;
+  height: 150px;
+  margin-bottom: 25px;
+  padding: 15px;
+  font-size: 18px;
+}
+
+.ContactForm-module__fw3Taq__sendButton {
+  color: #fff;
+  cursor: pointer;
+  background: #901c1c;
+  border: none;
+  border-radius: 5px;
+  width: fit-content;
+  padding: 15px 40px;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.ContactForm-module__fw3Taq__sendButton:hover {
+  background-color: #7a1818;
+}
+
+/* [project]/src/app/page.module.css [app-client] (css) */
+.page-module___8aEwW__container {
+  font-family: DM Sans, sans-serif;
+}
+
+.page-module___8aEwW__header {
+  justify-content: flex-start;
+  padding: 40px 100px;
+  display: flex;
+}
+
+.page-module___8aEwW__imageHeader {
+  width: auto;
+  height: 50px;
+}
+
+.page-module___8aEwW__infoContainer {
+  background-color: #fafafa;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin: 20px 100px;
+  padding: 50px;
+  display: flex;
+}
+
+.page-module___8aEwW__details {
+  flex-direction: column;
+  display: flex;
+}
+
+.page-module___8aEwW__details h1 {
+  color: #d3573c;
+  margin: .5em 0;
+  font-size: 60px;
+  font-weight: 400;
+}
+
+.page-module___8aEwW__localisation {
+  color: #901c1c;
+  margin: 0 0 .5em;
+  font-size: 24px;
+}
+
+.page-module___8aEwW__portrait {
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+  position: relative;
+  overflow: hidden;
+}
+
+.page-module___8aEwW__photoWrapper {
+  border-radius: 50%;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+/*# sourceMappingURL=src_e3b649c0._.css.map*/

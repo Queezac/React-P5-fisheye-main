@@ -7,14 +7,16 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faHeart as faHeartSolid } from "@fortawesome/free-solid-svg-icons";
 import { faHeart as faHeartRegular } from "@fortawesome/free-regular-svg-icons";
 import { useHotkeys } from "react-hotkeys-hook";
+import PhotographerLikes from "../PhotographerLikes/PhotographerLikes.js";
 
-export default function Gallery({ medias, onLikeChange }) {
+export default function Gallery({ medias, photographer }) {
 
   const [galleryMedias, setGalleryMedias] = useState(medias);
   const [sortType, setSortType] = useState("popularity");
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [currentIndex, setCurrentIndex] = useState(0);
   const [isOpen, setIsOpen] = useState(false);
+  const [totalLikes, setTotalLikes] = useState(photographer.totalLikes);
 
   const handleLike = (e, mediaId) => {
     e.stopPropagation();
@@ -25,9 +27,7 @@ export default function Gallery({ medias, onLikeChange }) {
     const isLiked = !targetMedia.isLiked;
     const diff = isLiked ? 1 : -1;
 
-    if (onLikeChange) {
-      onLikeChange(diff);
-    }
+    setTotalLikes(prev => prev + diff);
 
     setGalleryMedias(prevMedias =>
       prevMedias.map(media => {
@@ -50,9 +50,15 @@ export default function Gallery({ medias, onLikeChange }) {
     return 0;
   });
 
+  const getSortLabel = () => {
+    if (sortType === 'popularity') return 'Popularité';
+    if (sortType === 'date') return 'Date';
+    if (sortType === 'title') return 'Titre';
+  };
+
   const openModal = (index) => {
     setCurrentIndex(index);
-    setIsModalOpen(true);
+    setIsModalOpen(true); 
   };
 
   const closeModal = () => setIsModalOpen(false);
@@ -66,13 +72,7 @@ export default function Gallery({ medias, onLikeChange }) {
   };
 
   const currentMedia = sortedMedias[currentIndex];
-
-  const getSortLabel = () => {
-    if (sortType === 'popularity') return 'Popularité';
-    if (sortType === 'date') return 'Date';
-    if (sortType === 'title') return 'Titre';
-  };
-
+  
   
   useHotkeys('arrowright', () => nextMedia(), {
     enabled: isModalOpen,
@@ -219,6 +219,8 @@ export default function Gallery({ medias, onLikeChange }) {
           </div>
         </div>
       )}
+
+      <PhotographerLikes price={photographer.price} totalLikes={totalLikes} />
 
     </section>
   );

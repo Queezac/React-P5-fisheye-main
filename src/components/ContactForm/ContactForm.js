@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import { useHotkeys } from "react-hotkeys-hook";
 import styles from "./ContactForm.module.css";
 
 export default function ContactForm({ photographerName }) {
@@ -22,6 +23,10 @@ export default function ContactForm({ photographerName }) {
     console.log(formData);
     setIsOpen(false);
   };
+
+  useHotkeys('escape', () => setIsOpen(false), {
+    enabled: isOpen,
+  });
 
   return (
     <>

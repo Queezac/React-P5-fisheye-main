@@ -244,4 +244,21 @@
   font-size: 3rem;
 }
 
+.Gallery-module__Sa_FLW__photographerCardBottom {
+  color: #000;
+  z-index: 999;
+  background-color: #db8876;
+  border-radius: 5px 5px 0 0;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 300px;
+  padding: 0 50px;
+  font-size: 24px;
+  display: flex;
+  position: fixed;
+  bottom: 0;
+  right: 40px;
+}
+
 /*# sourceMappingURL=src_components_Gallery_Gallery_module_css_bad6b30c._.single.css.map*/
