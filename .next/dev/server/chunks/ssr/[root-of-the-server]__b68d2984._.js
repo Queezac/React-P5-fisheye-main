@@ -131,7 +131,13 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$fortawesom
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$fortawesome$2f$free$2d$regular$2d$svg$2d$icons$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/@fortawesome/free-regular-svg-icons/index.mjs [app-ssr] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$hotkeys$2d$hook$2f$packages$2f$react$2d$hotkeys$2d$hook$2f$dist$2f$index$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/react-hotkeys-hook/packages/react-hotkeys-hook/dist/index.js [app-ssr] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$PhotographerLikes$2f$PhotographerLikes$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/src/components/PhotographerLikes/PhotographerLikes.js [app-ssr] (ecmascript)");
+(()=>{
+    const e = new Error("Cannot find module '../../lib/like.js'");
+    e.code = 'MODULE_NOT_FOUND';
+    throw e;
+})();
 "use client";
+;
 ;
 ;
 ;
@@ -148,23 +154,27 @@ function Gallery({ medias, photographer }) {
     const [currentIndex, setCurrentIndex] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useState"])(0);
     const [isOpen, setIsOpen] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useState"])(false);
     const [totalLikes, setTotalLikes] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useState"])(photographer.totalLikes);
-    const handleLike = (e, mediaId)=>{
+    const handleLike = async (e, mediaId)=>{
         e.stopPropagation();
         const targetMedia = galleryMedias.find((m)=>m.id === mediaId);
         if (!targetMedia) return;
-        const isLiked = !targetMedia.isLiked;
-        const diff = isLiked ? 1 : -1;
+        const newIsLiked = !targetMedia.isLiked;
+        const diff = newIsLiked ? 1 : -1;
         setTotalLikes((prev)=>prev + diff);
         setGalleryMedias((prevMedias)=>prevMedias.map((media)=>{
                 if (media.id === mediaId) {
                     return {
                         ...media,
-                        likes: isLiked ? media.likes + 1 : media.likes - 1,
-                        isLiked: isLiked
+                        likes: media.likes + diff,
+                        isLiked: newIsLiked
                     };
                 }
                 return media;
             }));
+        const result = toggleLikeMedia(mediaId, newIsLiked);
+        if (!result.success) {
+            alert("Erreur : le like n'a pas pu être enregistré.");
+        }
     };
     const sortedMedias = [
         ...galleryMedias
@@ -213,7 +223,7 @@ function Gallery({ medias, photographer }) {
                         children: "Trier par"
                     }, void 0, false, {
                         fileName: "[project]/src/components/Gallery/Gallery.js",
-                        lineNumber: 93,
+                        lineNumber: 100,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -229,13 +239,13 @@ function Gallery({ medias, photographer }) {
                                         className: `${__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$Gallery$2f$Gallery$2e$module$2e$css__$5b$app$2d$ssr$5d$__$28$css__module$29$__["default"].arrow} ${isOpen ? __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$Gallery$2f$Gallery$2e$module$2e$css__$5b$app$2d$ssr$5d$__$28$css__module$29$__["default"].up : __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$Gallery$2f$Gallery$2e$module$2e$css__$5b$app$2d$ssr$5d$__$28$css__module$29$__["default"].down}`
                                     }, void 0, false, {
                                         fileName: "[project]/src/components/Gallery/Gallery.js",
-                                        lineNumber: 98,
+                                        lineNumber: 105,
                                         columnNumber: 13
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/src/components/Gallery/Gallery.js",
-                                lineNumber: 96,
+                                lineNumber: 103,
                                 columnNumber: 11
                             }, this),
                             isOpen && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -262,24 +272,24 @@ function Gallery({ medias, photographer }) {
                                         children: option.label
                                     }, option.id, false, {
                                         fileName: "[project]/src/components/Gallery/Gallery.js",
-                                        lineNumber: 110,
+                                        lineNumber: 117,
                                         columnNumber: 17
                                     }, this))
                             }, void 0, false, {
                                 fileName: "[project]/src/components/Gallery/Gallery.js",
-                                lineNumber: 102,
+                                lineNumber: 109,
                                 columnNumber: 13
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/src/components/Gallery/Gallery.js",
-                        lineNumber: 95,
+                        lineNumber: 102,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/src/components/Gallery/Gallery.js",
-                lineNumber: 92,
+                lineNumber: 99,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -296,7 +306,7 @@ function Gallery({ medias, photographer }) {
                                 className: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$Gallery$2f$Gallery$2e$module$2e$css__$5b$app$2d$ssr$5d$__$28$css__module$29$__["default"].media
                             }, void 0, false, {
                                 fileName: "[project]/src/components/Gallery/Gallery.js",
-                                lineNumber: 131,
+                                lineNumber: 138,
                                 columnNumber: 15
                             }, this),
                             media.video && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("video", {
@@ -309,12 +319,12 @@ function Gallery({ medias, photographer }) {
                                     type: "video/mp4"
                                 }, void 0, false, {
                                     fileName: "[project]/src/components/Gallery/Gallery.js",
-                                    lineNumber: 142,
+                                    lineNumber: 149,
                                     columnNumber: 17
                                 }, this)
                             }, void 0, false, {
                                 fileName: "[project]/src/components/Gallery/Gallery.js",
-                                lineNumber: 141,
+                                lineNumber: 148,
                                 columnNumber: 15
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -325,7 +335,7 @@ function Gallery({ medias, photographer }) {
                                         children: media.title
                                     }, void 0, false, {
                                         fileName: "[project]/src/components/Gallery/Gallery.js",
-                                        lineNumber: 147,
+                                        lineNumber: 154,
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -336,7 +346,7 @@ function Gallery({ medias, photographer }) {
                                                 children: media.likes
                                             }, void 0, false, {
                                                 fileName: "[project]/src/components/Gallery/Gallery.js",
-                                                lineNumber: 149,
+                                                lineNumber: 156,
                                                 columnNumber: 17
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
@@ -350,35 +360,35 @@ function Gallery({ medias, photographer }) {
                                                     }
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/components/Gallery/Gallery.js",
-                                                    lineNumber: 151,
+                                                    lineNumber: 158,
                                                     columnNumber: 19
                                                 }, this)
                                             }, void 0, false, {
                                                 fileName: "[project]/src/components/Gallery/Gallery.js",
-                                                lineNumber: 150,
+                                                lineNumber: 157,
                                                 columnNumber: 17
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/src/components/Gallery/Gallery.js",
-                                        lineNumber: 148,
+                                        lineNumber: 155,
                                         columnNumber: 15
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/src/components/Gallery/Gallery.js",
-                                lineNumber: 146,
+                                lineNumber: 153,
                                 columnNumber: 13
                             }, this)
                         ]
                     }, media.id, true, {
                         fileName: "[project]/src/components/Gallery/Gallery.js",
-                        lineNumber: 125,
+                        lineNumber: 132,
                         columnNumber: 11
                     }, this))
             }, void 0, false, {
                 fileName: "[project]/src/components/Gallery/Gallery.js",
-                lineNumber: 123,
+                lineNumber: 130,
                 columnNumber: 7
             }, this),
             isModalOpen && currentMedia && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -402,12 +412,12 @@ function Gallery({ medias, photographer }) {
                                     children: "❮"
                                 }, void 0, false, {
                                     fileName: "[project]/src/components/Gallery/Gallery.js",
-                                    lineNumber: 174,
+                                    lineNumber: 181,
                                     columnNumber: 17
                                 }, this)
                             }, void 0, false, {
                                 fileName: "[project]/src/components/Gallery/Gallery.js",
-                                lineNumber: 173,
+                                lineNumber: 180,
                                 columnNumber: 15
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -422,7 +432,7 @@ function Gallery({ medias, photographer }) {
                                         priority: true
                                     }, void 0, false, {
                                         fileName: "[project]/src/components/Gallery/Gallery.js",
-                                        lineNumber: 185,
+                                        lineNumber: 192,
                                         columnNumber: 19
                                     }, this) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("video", {
                                         controls: true,
@@ -434,12 +444,12 @@ function Gallery({ medias, photographer }) {
                                             type: "video/mp4"
                                         }, void 0, false, {
                                             fileName: "[project]/src/components/Gallery/Gallery.js",
-                                            lineNumber: 195,
+                                            lineNumber: 202,
                                             columnNumber: 21
                                         }, this)
                                     }, void 0, false, {
                                         fileName: "[project]/src/components/Gallery/Gallery.js",
-                                        lineNumber: 194,
+                                        lineNumber: 201,
                                         columnNumber: 19
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -448,13 +458,13 @@ function Gallery({ medias, photographer }) {
                                         children: currentMedia.title
                                     }, void 0, false, {
                                         fileName: "[project]/src/components/Gallery/Gallery.js",
-                                        lineNumber: 198,
+                                        lineNumber: 205,
                                         columnNumber: 17
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/src/components/Gallery/Gallery.js",
-                                lineNumber: 183,
+                                lineNumber: 190,
                                 columnNumber: 15
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -467,7 +477,7 @@ function Gallery({ medias, photographer }) {
                                         children: "✖"
                                     }, void 0, false, {
                                         fileName: "[project]/src/components/Gallery/Gallery.js",
-                                        lineNumber: 202,
+                                        lineNumber: 209,
                                         columnNumber: 17
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
@@ -477,29 +487,29 @@ function Gallery({ medias, photographer }) {
                                         children: "❯"
                                     }, void 0, false, {
                                         fileName: "[project]/src/components/Gallery/Gallery.js",
-                                        lineNumber: 209,
+                                        lineNumber: 216,
                                         columnNumber: 17
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/src/components/Gallery/Gallery.js",
-                                lineNumber: 201,
+                                lineNumber: 208,
                                 columnNumber: 15
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/src/components/Gallery/Gallery.js",
-                        lineNumber: 172,
+                        lineNumber: 179,
                         columnNumber: 13
                     }, this)
                 }, void 0, false, {
                     fileName: "[project]/src/components/Gallery/Gallery.js",
-                    lineNumber: 170,
+                    lineNumber: 177,
                     columnNumber: 11
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/src/components/Gallery/Gallery.js",
-                lineNumber: 163,
+                lineNumber: 170,
                 columnNumber: 9
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$PhotographerLikes$2f$PhotographerLikes$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
@@ -507,13 +517,13 @@ function Gallery({ medias, photographer }) {
                 totalLikes: totalLikes
             }, void 0, false, {
                 fileName: "[project]/src/components/Gallery/Gallery.js",
-                lineNumber: 223,
+                lineNumber: 230,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/src/components/Gallery/Gallery.js",
-        lineNumber: 91,
+        lineNumber: 98,
         columnNumber: 5
     }, this);
 }

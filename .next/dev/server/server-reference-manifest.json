@@ -1,5 +1,21 @@
 {
-  "node": {},
+  "node": {
+    "60b03d22148d43e1d5a096b5969968e86b11364b09": {
+      "workers": {
+        "app/photographes/[id]/page": {
+          "moduleId": "[project]/.next-internal/server/app/photographes/[id]/page/actions.js { ACTIONS_MODULE0 => \"[project]/src/app/lib/like.js [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
+          "async": false,
+          "exportedName": "toggleLikeMedia",
+          "filename": "src/app/lib/like.js"
+        }
+      },
+      "layer": {
+        "app/photographes/[id]/page": "action-browser"
+      },
+      "filename": "src/app/lib/like.js",
+      "exportedName": "toggleLikeMedia"
+    }
+  },
   "edge": {},
   "encryptionKey": "BxjSiK8F5RPm2ylGfZwbkC1qANIwg4P1LqxjBAfvwg0="
 }

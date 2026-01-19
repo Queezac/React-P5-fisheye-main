@@ -8,6 +8,7 @@ import { faHeart as faHeartSolid } from "@fortawesome/free-solid-svg-icons";
 import { faHeart as faHeartRegular } from "@fortawesome/free-regular-svg-icons";
 import { useHotkeys } from "react-hotkeys-hook";
 import PhotographerLikes from "../PhotographerLikes/PhotographerLikes.js";
+import { toggleLikeMedia } from "../../app/lib/like.js";
 
 export default function Gallery({ medias, photographer }) {
 
@@ -18,30 +19,37 @@ export default function Gallery({ medias, photographer }) {
   const [isOpen, setIsOpen] = useState(false);
   const [totalLikes, setTotalLikes] = useState(photographer.totalLikes);
 
-  const handleLike = (e, mediaId) => {
+  const handleLike = async (e, mediaId) => {
     e.stopPropagation();
-    
+
     const targetMedia = galleryMedias.find(m => m.id === mediaId);
     if (!targetMedia) return;
 
-    const isLiked = !targetMedia.isLiked;
-    const diff = isLiked ? 1 : -1;
+    const newIsLiked = !targetMedia.isLiked;
+    const diff = newIsLiked ? 1 : -1;
 
     setTotalLikes(prev => prev + diff);
-
     setGalleryMedias(prevMedias =>
       prevMedias.map(media => {
         if (media.id === mediaId) {
           return {
             ...media,
-            likes: isLiked ? media.likes + 1 : media.likes - 1,
-            isLiked: isLiked
+            likes: media.likes + diff,
+            isLiked: newIsLiked
           };
         }
         return media;
       })
     );
+
+    const result = await toggleLikeMedia(mediaId, newIsLiked);
+
+    if (!result.success) {
+      alert("Erreur : le like n'a pas pu être enregistré.");
+      console.error(result.error);
+    }
   };
+
 
   const sortedMedias = [...galleryMedias].sort((a, b) => {
     if (sortType === "popularity") return b.likes - a.likes;

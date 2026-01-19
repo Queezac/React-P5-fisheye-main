@@ -15,28 +15,30 @@ export default async function PhotographerPage({ params }) {
 
   if (!id) notFound();
 
-  const photographer = await getPhotographerWithLikes(Number(id));
-  if (!photographer) notFound();
+  const [photographer, medias] = await Promise.all([
+    getPhotographerWithLikes(Number(id)),
+    getAllMediasForPhotographer(Number(id))
+  ]);
 
-  const medias = await getAllMediasForPhotographer(Number(id));
+  if (!photographer) notFound();
 
   return (
     <div className={styles.container}>
       <Header displayText={false} />
 
       <main id="main-content">
-        <div className={styles.infoContainer}>
-          <section className={styles.details} aria-labelledby="photographer-name">
+        <section className={styles.infoContainer}>
+          <div className={styles.details} aria-labelledby="photographer-name">
             <h1 id="photographer-name">{photographer.name}</h1>
             <p className={styles.localisation}>{photographer.city}, {photographer.country}</p>
             <p className={styles.tagline}>{photographer.tagline}</p>
-          </section>
+          </div>
 
-          <section className={styles.contact}>
+          <div className={styles.contact}>
             <ContactForm photographerName={photographer.name} />
-          </section>
+          </div>
 
-          <section className={styles.portrait}>
+          <div className={styles.portrait}>
             <div className={styles.photoWrapper}>
               <Image
                 src={`/assets/${photographer.portrait}`}
@@ -47,8 +49,8 @@ export default async function PhotographerPage({ params }) {
                 sizes="(max-width: 768px) 150px, 200px"
               />
             </div>
-          </section>
-        </div>
+          </div>
+        </section>
         <Gallery medias={medias} photographer={photographer} />
       </main>
     </div>
